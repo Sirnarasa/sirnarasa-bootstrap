@@ -1,13 +1,11 @@
-<header>
-    <div class="jumbotron jumbotron-fluid bg-warning">
-        <div class="container">
-            <div class="jumbotron zhadow">
-                    <h1 class="text-center display-3">{{ .Title }}</h1>
-                    <div class="text-center">
-                        {{ if .Params.image }}<img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}">{{ end }}
-                    </div><hr>
-                    <p class="lead text-center">{{ .Description }}</p>
-            </div>
+<div class="jumbotron jumbotron-fluid bg-warning">
+    <div class="container">
+        <div class="pt-5 jumbotron zhadow">
+                <h1 class="text-center display-3">{{ .Title }}</h1>
+                <div class="text-center">
+                    {{ if .Params.image }}<img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}">{{ end }}
+                </div><hr>
+                <p class="lead text-center">{{ .Description }}</p>
         </div>
     </div>
-</header>
+</div>
