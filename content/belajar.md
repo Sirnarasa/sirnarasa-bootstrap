@@ -1,9 +1,9 @@
 +++
-title = Belajar di Sirnarasa
-type = page
-page = /belajar.html
-image = /img/belajar/debaan-tiap-ahad.jpg
-heading = Kajembaran Rohmaniyyah
+title = "Belajar di Sirnarasa"
+type = "page"
+page = "/belajar.html"
+image = "/img/belajar/debaan-tiap-ahad.jpg"
+heading = "Kajembaran Rohmaniyyah"
 description = "Belajar di Pesantren Pesantren Sirnarasa Cisiri"
 +++
 
