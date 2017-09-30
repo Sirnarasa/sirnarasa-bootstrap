@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+
+        {{ partial "nav.html" . }}
+        {{ partial "header" . }}
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+
+                <div class="col-sm-12 col-lg-12 mb-5 card">
+                    <article>
+                        <div class="">
+                           <div class="card-body p-md-5">
+                                
+                               <div class="text-center mb-5">
+                                    {{ if .Params.image }}<img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}">{{ end }}
+                                </div>
+                                <div class="post-content">
+                                    {{ .Content }}
+                                </div>
+                                <div class="post-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+            </div>
+        </div>
+
+        {{ partial "footer.html" . }}
+        {{ partial "js-init.html" . }}
+    </body>
+</html>

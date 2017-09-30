@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light zhadow">
+            <div class="container">
+        
+                <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="/favicon-32x32.png" width="30" height="30" class="d-inline-block align-top rounded-circle"
+                    alt=""> Sirnarasa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSirnarasa" aria-controls="navbarSirnarasa"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSirnarasa">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/belajar">Belajar<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="/post">Kajian</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/tentang">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/kontak">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-5 mb-5">
+            <div class="row">
+
+                <div class="col-sm-12 col-lg-8 mb-5 card">
+                    <article>
+                        <div class="">
+                           <div class="card-body p-md-5">
+                                
+                               <div class="post-header mb-5">
+                                    
+                                    <div class="mb-3">
+                                        <img src="{{ .Site.Author.image }}" class="rounded-circle" width="32px" height="32px">
+                                        <a class="align-middle text-dark" href="{{ .Site.Author.homepage }}">{{ .Site.Author.name }}</a> <small class="align-middle text-muted"> - <time>{{ .Date.Format "Jan, 02-01-2006" }} <br> Membaca dalam <strong>{{ .ReadingTime }}</strong> menit </time></small>
+                                    </div>
+                                    {{ if .Params.image }}<img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}">{{ end }}
+
+                                    <h1 class="card-title mb-3">{{ .Title }}</h1>
+                                    
+                                    <div>
+                                        {{ range .Params.tags }}
+                                        <span class="badge badge-success">
+                                             #<a class="text-white" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                                        </span> 
+                                        {{ end }}
+                                    </div>
+
+                                </div>
+                                <div class="post-content">
+                                    {{ .Content }}
+                                </div>
+                                <div class="post-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4">
+                       {{ partial "aside.html" . }}
+                    </div>
+            </div>
+        </div>
+
+        {{ partial "footer.html" . }}
+        {{ partial "js-init.html" . }}
+    </body>
+</html>

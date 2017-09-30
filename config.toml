@@ -1,0 +1,26 @@
+baseURL = "http://example.org/"
+languageCode = "id-id"
+title = "Pesantren Sirnarasa"
+
+# Agar front-matter pakai format YAML
+MetaDataFormat = "yaml"
+
+# untuk apply temanya
+themesDir = "themes"
+theme = "sirnarasa"
+
+# Shortname disqus, silahkan sesuaikan
+DisqusShortname = "brionz"
+
+# Untuk Google Analytic, silahkan sesuikan
+googleAnalytics = "" 
+
+# Untuk deskripsi tag meta di homepage
+description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya Indonesia. Yayasan Pesantren Sirnarasa Cisiri, Kajembaran Rohmaniyyah."
+
+# Biodata Author
+[author]
+    name = "Team Redaksi"
+    homepage = "https://fb.com/pasantrensirnarasa"
+    bio = "Web Developer Indonesia."
+    image = "https://lh3.googleusercontent.com/-PEst4E0Vwjo/AAAAAAAAAAI/AAAAAAAAAm8/tfGmBmadw3A/s60-p-rw-no/photo.jpg"
