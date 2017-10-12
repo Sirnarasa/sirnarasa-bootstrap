@@ -1,1 +1,7 @@
-<img class="{{ .Get "class" }}" src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} />
+<div class="text-center">
+    <img class="{{ .Get "class" }}" src="{{ .Get "src" }}" width="{{ .Get "width" }}" height="{{ .Get "height" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} />
+    <br/>
+    <small>
+        {{ .Get "text" }}
+    </small>
+</div>
