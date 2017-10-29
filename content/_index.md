@@ -1,4 +1,4 @@
 ---
-title: "Pesantren Sirnarasa Cisirri - Kajembaran Rohmaniyyah"
-description: "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya Indonesia. Yayasan Pesantren Sirnarasa Cisiri, Kajembaran Rohmaniyyah."
+title: "Pesantren Sirnarasa Cisirri"
+description: "Pesantren Sirnarasa Cisiri, Kajembaran Rohmaniyyah. Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya Indonesia."
 ---
