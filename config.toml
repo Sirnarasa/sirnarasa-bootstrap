@@ -10,13 +10,13 @@ themesDir = "themes"
 theme = "sirnarasa"
 
 # Shortname disqus, silahkan sesuaikan
-DisqusShortname = "brionz"
+DisqusShortname = ""
 
 # Untuk Google Analytic, silahkan sesuikan
 googleAnalytics = "" 
 
 # Untuk deskripsi tag meta di homepage
-description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya Indonesia. Yayasan Pesantren Sirnarasa Cisiri, Kajembaran Rohmaniyyah."
+description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya Indonesia. Pesantren Sirnarasa Cisirri, Kajembaran Rohmaniyyah."
 
 # Biodata Author
 [author]
