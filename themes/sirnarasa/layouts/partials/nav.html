@@ -9,19 +9,31 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSirnarasa">
-            <ul class="navbar-nav ml-auto">
-                <!--<li class="nav-item">
-                    <a class="nav-link" href="/belajar">Belajar<span class="sr-only">(current)</span></a>
-                </li>-->
-                <li class="nav-item">
-                        <a class="nav-link" href="/post">Kajian</a>
-                    </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/tentang">Tentang</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/kontak">Kontak</a>
-                </li>
+            {{ $currentPage := . }}
+        <ul class="navbar-nav ml-auto">
+            {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{.URL}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+                {{ .Pre }}
+                <span>{{ .Name }}</span>
+                  </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {{ range .Children }}
+              <a class="dropdown-item" href="{{.URL}}">{{.Name}}</a>
+                {{ end }}
+            </div>
+          </li>
+          {{else}}
+          <li class="nav-item">
+            <a class="nav-link" href="{{.URL}}">
+              {{ .Pre }}
+                <span>{{ .Name }}</span>
+            </a>
+          </li>
+            {{end}}
+          {{end}}
             </ul>
             <form class="form-inline my-2 my-lg-0" action="https://www.google.co.id" id="cse-search-box">
                 <input type="hidden" name="cx" value="015298665512432213965:gvyz-z8ivhk" />

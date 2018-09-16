@@ -24,3 +24,19 @@ description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya 
     homepage = "https://fb.com/pasantrensirnarasa"
     bio = "Web Developer Indonesia."
     image = "https://lh3.googleusercontent.com/-PEst4E0Vwjo/AAAAAAAAAAI/AAAAAAAAAm8/tfGmBmadw3A/s60-p-rw-no/photo.jpg"
+
+[menu]
+    [[menu.main]]
+        name = "Kajian"
+        url = "/post/"
+        weight = -110
+
+    [[menu.main]]
+        name = "Tentang"
+        url = "/tentang/"
+        weight = -100
+
+    [[menu.main]]
+        name = "Kontak"
+        url = "/kontak/"
+        weight = -90
