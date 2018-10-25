@@ -1,10 +1,9 @@
-<div class="jumbotron jumbotron-fluid bg-warning mt-5">
+<div class="jumbotron jumbotron-fluid my-5" style="background: url('/img/belajar/colorful-paper.jpg') center no-repeat; background-size: cover">
     <div class="container">
-        <div class="pt-5 jumbotron zhadow">
-                <h1 class="text-center display-3">{{ .Title }}</h1>
-                <div class="text-center">
-                    {{ if .Params.image }}<img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}">{{ end }}
-                </div>
+        <div class="text-center px-5 jumbotron bg-warning zhadow">
+            <img class="img-fluid rounded-circle zhadow" src="/apple-touch-icon-180x180.png" alt="{{ .Title }}">
+            <h1 class="display-4">{{.Title}}</h1>
+            {{if .Description}}<small>{{.Description}}</small>{{end}}
         </div>
     </div>
 </div>

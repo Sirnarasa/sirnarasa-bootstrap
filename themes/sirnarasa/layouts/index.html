@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="id">
-    <head>
-        {{ partial "head" . }}
-    </head>
-    <body>
-        {{ partial "nav" . }}
+{{define "main"}}
 
-        {{ partial "header" . }}
+{{ partial "nav" . }}
 
-        {{ partial "post-grid" . }}
+{{ partial "header" . }}
 
-        {{ partial "footer" . }}
-        
-        {{ partial "js-init" . }}
-    </body>
-</html>
+{{ partial "post-grid" . }}
+
+{{end}}

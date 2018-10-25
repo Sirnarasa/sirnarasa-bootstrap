@@ -2,7 +2,7 @@
 title: "Ashhabul Kahfi"
 date: 2017-08-30T01:04:53+07:00
 categories: "Kajian"
-tags: "sirnarasa"
+tags: ["sirnarasa"]
 description: >-
   Di dalam surat al-Kahfi Alloh SWT mengamankan para pemuda pecinta kesucian jiwa, ditidurkan selama 309 tahun.
 image: /img/post/ashhabul-kahfi.jpg

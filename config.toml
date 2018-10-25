@@ -28,15 +28,18 @@ description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya 
 [menu]
     [[menu.main]]
         name = "Kajian"
-        url = "/post/"
-        weight = -110
-
+        url = "/categories/kajian/"
+        weight = 1
+    [[menu.main]]
+        name = "Berita"
+        url = "/categories/berita/"
+        weight = 2
     [[menu.main]]
         name = "Tentang"
         url = "/tentang/"
-        weight = -100
+        weight = 3
 
     [[menu.main]]
         name = "Kontak"
         url = "/kontak/"
-        weight = -90
+        weight = 4
