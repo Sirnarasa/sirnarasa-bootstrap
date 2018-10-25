@@ -7,8 +7,7 @@ slug: {{ .BaseFileName }}
 tags:
     - Python
 
-categories:
-    - Pemrograman
+categories: Pemrograman
 
 image:
     alt: "{{ replace .TranslationBaseName "-" " " | title }}"

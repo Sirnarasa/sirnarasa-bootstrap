@@ -23,7 +23,7 @@ description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya 
     name = "Team Redaksi"
     homepage = "https://fb.com/pasantrensirnarasa"
     bio = "Web Developer Indonesia."
-    image = "https://lh3.googleusercontent.com/-PEst4E0Vwjo/AAAAAAAAAAI/AAAAAAAAAm8/tfGmBmadw3A/s60-p-rw-no/photo.jpg"
+    image = "https://d33wubrfki0l68.cloudfront.net/bd1bafe187b7437ef90e63f6c6a1bb26e20bdf01/f89f7/favicon-32x32.png"
 
 [menu]
     [[menu.main]]
