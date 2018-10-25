@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {{ partialCached "head.html" . }}
+        {{ partial "head" . }}
     </head>
     <body>
 
@@ -55,21 +55,21 @@
                                 
                                <div class="post-header mb-5">
                                     
+                                    <h1 class="card-title mb-5">{{ .Title }}</h1>
                                     <div class="mb-3">
                                         <img src="{{ .Site.Author.image }}" class="rounded-circle" width="32px" height="32px">
                                         <a class="align-middle text-dark" href="{{ .Site.Author.homepage }}">{{ .Site.Author.name }}</a> <small class="align-middle text-muted"> - <time>{{ .Date.Format "Jan, 02-01-2006" }} <br> Membaca dalam <strong>{{ .ReadingTime }}</strong> menit </time></small>
                                     </div>
-                                    {{ if .Params.image }}<img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}">{{ end }}
-
-                                    <h1 class="card-title mb-3">{{ .Title }}</h1>
-                                    
                                     <div>
                                         {{ range .Params.tags }}
-                                        <span class="badge badge-success">
+                                        <span class="badge badge-success mb-3">
                                              #<a class="text-white" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
                                         </span> 
                                         {{ end }}
                                     </div>
+                                    {{ if .Params.image }}<img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}">{{ end }}
+
+                                    
 
                                 </div>
                                 <div class="post-content">
