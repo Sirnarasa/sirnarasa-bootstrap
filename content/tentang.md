@@ -1,5 +1,5 @@
 +++
-title = "Tentang"
+title = "Tentang Pesantren Sirnarasa"
 type = "page"
 page="/tentang.html"
 +++
