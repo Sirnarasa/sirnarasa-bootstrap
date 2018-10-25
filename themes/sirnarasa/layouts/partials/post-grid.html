@@ -15,6 +15,7 @@
                             <h4 class="card-title">
                                 <a class="text-dark" href="{{ .RelPermalink }}">{{ .Title }}</a>
                             </h4>
+                            <a href="/categories/{{.Params.categories | urlize }}"><span class="badge badge-success">{{.Params.categories}}</span></a>
                         </div>
                     </div>
                 </div>

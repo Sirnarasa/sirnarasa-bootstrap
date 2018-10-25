@@ -1,7 +1,7 @@
 ---
 title: '"Sabda Beliau" dan Pangersa "Abah"'
 date: 2017-08-24T15:04:10.000Z
-categories: ["Kajian"]
+categories: "Kajian"
 description: >-
   Di dalam Tanbih berbahasa Indonesia, ada kalimat 'Sabda beliau' yang ditunjukan kepada Abah Sepuh, Apakah tidak berlebihan?
 image: /img/post/sabda-beliau-dan-pangersa-abah.jpg

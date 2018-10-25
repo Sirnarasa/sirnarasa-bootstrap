@@ -4,5 +4,5 @@ date: {{ .Date }}
 image: ""
 description: 
 categories: Berita
-tags: "Pencak Silat"
+tags: ["Pencak Silat"]
 ---
