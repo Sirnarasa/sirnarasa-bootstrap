@@ -9,7 +9,7 @@ type: "page"
 ### Kalender 2021
 
 {{< img src="/img/kalender/kalender-2021.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2021" >}}
-
+[Pusat Info](https://wa.me/6281323123951)
 Ikhwan wal akhwat.., inilah
 FITUR KALENDER PESANTREN SIRNARASA TAHUN 2021
 
