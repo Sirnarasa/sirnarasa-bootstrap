@@ -2,15 +2,16 @@
 title: "Kalender Pesantren Sirnarasa"
 type: "page" 
 ---
-Assalaamu’alaikum Wr. Wb.
+**Assalaamu’alaikum Wr. Wb.**
 
+## Kalender Sirnarasa
 
+### Kalender 2021
 
-### Kalender 2020
+{{< img src="/img/kalender/kalender-2021.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2021" >}}
 
-{{< img src="/img/kalender/kalender-2020.jpeg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2020" >}}
-
-#### FITUR KALENDER PESANTREN SIRNARASA TAHUN 2020
+Ikhwan wal akhwat.., inilah
+FITUR KALENDER PESANTREN SIRNARASA TAHUN 2021
 
 A. Photo Pangersa Abah Aos; 
 
@@ -23,6 +24,31 @@ D. Penanggalan Masehi, Hijriyyah, Pasaran & Jawa;
 E. Libur Nasional & Cuti Bersama berdasarkan SKB 3 Menteri;
 
 F. Keterangan Khusus Ikhwan TQN PP. Suryalaya-Sirnarasa:
+1. Jadwal Manaqib Pesantren Sirnarasa;
+2. Hari TANBIH 1956;
+3. Jadwal Sholat Rojab;
+4. Malam Nisyfu Sya’ban;
+5. Jadwal Sholat Lailatul Qodar;
+6. Maulid Pesantren Sirnarasa dan Haul Umi Rosliani;
+7. Hari Rabu Terakhir Bulan Shofar;
+8. Hari Santri Nasional; 
+9. Maulid Abah Aos berdasarkan perhitungan Hijriyyah dan Masehi;
+10. Jadwal Manaqib Masjid Raya & Masjid Agung. 
+11. 
+### Kalender 2020
+
+{{< img src="/img/kalender/kalender-2020.jpeg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2020" >}}
+
+**Fitur Kalender Sirnarasa Tahun 2020**
+
+- Photo Pangersa Abah Aos;
+- Photo Masjid tempat Manaqib;
+- Jadwal Sholat & Imsyakiyyah;
+- Penanggalan Masehi, Hijriyyah, Pasaran & Jawa;
+- Libur Nasional & Cuti Bersama berdasarkan SKB 3 Menteri;
+- Keterangan Khusus Ikhwan TQN PP. Suryalaya-Sirnarasa:
+
+
 1. Jadwal Manaqib Pesantren Sirnarasa;
 2. Hari TANBIH 1956;
 3. Jadwal Sholat Rojab;
@@ -81,7 +107,7 @@ Informasi dan Pemasaran:
 - More info » SMS/WhatsApp: 081323123951
 ### Kalender 2018
 
-#### Alhamdulillahirobbil 'aalamiin..
+**Alhamdulillahirobbil 'aalamiin..**
 
 Inilah tampilan cetak **Kalender Pesantren Sirnarasa tahun 2018** yang telah disesuaikan dengan Keputusan Bersama Menteri Agama, Menteri Ketenagakerjaan dan Menteri Pendayagunaan Aparatur Negara dan Reformasi Birokrasi Republik Indonesia  (SKB 3 Menteri) Nomor 707 tahun 2017, Nomor 256 tahun 2017, Nomor 01/SKB/MENPAN-RB/09/2017 tentang Hari Libur Nasional dan Cuti Bersama tahun 2018, dan telah direvisi tampilannya sesuai dengan keinginan Pangersa Abah Aos.
 

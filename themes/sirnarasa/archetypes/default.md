@@ -15,4 +15,5 @@ image:
     thumblink: https://unsplash.it/320/160?random
 
 description: ""
+type: post
 ---

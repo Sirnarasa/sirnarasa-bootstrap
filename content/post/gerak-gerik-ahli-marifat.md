@@ -7,6 +7,7 @@ description: >-
 image: /img/post/belalang.jpg
 author: Team Redaksi
 authorlink: "#"
+type: "post"
 ---
 
 

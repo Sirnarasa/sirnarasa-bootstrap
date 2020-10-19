@@ -8,6 +8,7 @@ description: >-
 image: /img/post/jadwal-maulid-abah-75.jpg
 author: Team Redaksi
 authorlink: "#"
+type: post
 ---
 
 ### Assalamualaikum

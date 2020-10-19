@@ -8,6 +8,7 @@ description: >-
 image: /img/post/ashhabul-kahfi.jpg
 author: Team Redaksi
 authorlink: "#"
+type: post
 ---
 Mereka di ikat hatinya oleh Alloh atas dasar permohonan mereka kepada Alloh sebagaimana dijelaskan di dalam al-Qur'an, yang diuraikan di dalam buku Lautan Tanpa Tepi pada judul pertama.
 

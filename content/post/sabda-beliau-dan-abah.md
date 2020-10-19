@@ -7,6 +7,7 @@ description: >-
 image: /img/post/sabda-beliau-dan-pangersa-abah.jpg
 author: Team Redaksi
 authorlink: "#"
+type: post
 ---
 
 

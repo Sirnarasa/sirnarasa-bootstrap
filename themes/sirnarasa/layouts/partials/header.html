@@ -1,7 +1,7 @@
 <div class="jumbotron jumbotron-fluid my-5" style="background: url('/img/belajar/colorful.webp') center no-repeat; background-size: cover">
     <div class="container">
         <div class="text-center px-5 jumbotron bg-warning zhadow">
-            <img class="img-fluid rounded-circle zhadow" src="/apple-touch-icon-180x180.png" alt="{{ .Title }}">
+            <img class="img-fluid rounded-circle zhadow lazy" data-src="/apple-touch-icon-180x180.png" alt="{{ .Title }}">
             <h1 class="display-4">{{.Title}}</h1>
             {{if .Description}}<small>{{.Description}}</small>{{end}}
         </div>

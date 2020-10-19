@@ -5,6 +5,7 @@ description: Kejuaraan pencak silat Nasional yang di adakan di Jakarta atau bias
 image: "/img/post/jktc1.webp"
 categories: "Berita"
 tags: ["Pencak Silat"]
+type: post
 ---
 
 ### Berikut Cuplikan Acara JKTC Ke-10 tahun 2018 di Jakarta

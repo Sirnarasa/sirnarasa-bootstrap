@@ -1,5 +1,5 @@
 <div class="text-center my-2 mx-2">
-    <img class="img-fluid" src="{{ .Get "src" }}" width="{{ .Get "width" }}" height="{{ .Get "height" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} />
+    <img class="img-fluid lazy" data-src="{{ .Get "src" }}" width="{{ .Get "width" }}" height="{{ .Get "height" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} />
     <br/>
     <small>
         {{ .Get "text" }}

@@ -6,6 +6,7 @@ description: Di dalam surat al-Baqoroh ada kisah penting mengenai kata menyambut
 image: /img/post/pemuda-dan-sapi-betina.jpg
 author: Team Redaksi
 authorlink: "#"
+type: post
 ---
 
 Anak sholeh terhadap ibunya, disambut oleh sapi betina peninggalan bapaknya yang disimpan di sebuah hutan belantara dititipkan langsung kepada Alloh, untuk bekal hidup anaknya. Hikayatnya sebagai berikut:
