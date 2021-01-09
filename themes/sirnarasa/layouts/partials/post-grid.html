@@ -1,19 +1,18 @@
-<article class="card-post">
+<article class="card-post py-4">
     <div class="container">
         <div class="row">
 
-            {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 6 }}
-            {{ range $paginator.Pages }}
+            {{ range last 6 (where .Site.Pages "Type" "post") }}
                 <div class="col-md-4 mb-4 d-flex">
                     <div class="card">
-                        <a href="{{ .RelPermalink }}">
+                        <a href="{{ .Permalink }}">
                         <img class='card-img-top lazy' 
                             data-src='{{ if eq .Params.image "" }}/img/mekah.jpg{{else}}{{ .Params.image }}{{end}}'
                             alt='{{ .Title }}'>
                         </a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a class="text-dark" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                                <a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
                             </h4>
                             <a href="/categories/{{.Params.categories | urlize }}"><span class="badge badge-success">{{.Params.categories}}</span></a>
                         </div>

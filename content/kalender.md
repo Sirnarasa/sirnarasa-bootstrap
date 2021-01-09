@@ -24,17 +24,18 @@ D. Penanggalan Masehi, Hijriyyah, Pasaran & Jawa;
 E. Libur Nasional & Cuti Bersama berdasarkan SKB 3 Menteri;
 
 F. Keterangan Khusus Ikhwan TQN PP. Suryalaya-Sirnarasa:
-1. Jadwal Manaqib Pesantren Sirnarasa;
-2. Hari TANBIH 1956;
-3. Jadwal Sholat Rojab;
-4. Malam Nisyfu Sya’ban;
-5. Jadwal Sholat Lailatul Qodar;
-6. Maulid Pesantren Sirnarasa dan Haul Umi Rosliani;
-7. Hari Rabu Terakhir Bulan Shofar;
-8. Hari Santri Nasional; 
-9. Maulid Abah Aos berdasarkan perhitungan Hijriyyah dan Masehi;
-10. Jadwal Manaqib Masjid Raya & Masjid Agung. 
-11. 
+
+- Jadwal Manaqib Pesantren Sirnarasa;
+- Hari TANBIH 1956;
+- Jadwal Sholat Rojab;
+- Malam Nisyfu Sya’ban;
+- Jadwal Sholat Lailatul Qodar;
+- Maulid Pesantren Sirnarasa dan Haul Umi Rosliani;
+- Hari Rabu Terakhir Bulan Shofar;
+- Hari Santri Nasional; 
+- Maulid Abah Aos berdasarkan perhitungan Hijriyyah dan Masehi;
+- Jadwal Manaqib Masjid Raya & Masjid Agung. 
+
 ### Kalender 2020
 
 {{< img src="/img/kalender/kalender-2020.jpeg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2020" >}}
