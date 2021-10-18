@@ -42,3 +42,7 @@ description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya 
         name = "Kontak"
         url = "/kontak/"
         weight = 4
+    [[menu.main]]
+        name = "Infaq"
+        url = "/infaq/"
+        weight = 5

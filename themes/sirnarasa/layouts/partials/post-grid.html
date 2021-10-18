@@ -6,8 +6,8 @@
                 <div class="col-md-4 mb-4 d-flex">
                     <div class="card">
                         <a href="{{ .Permalink }}">
-                        <img class='card-img-top lazy' 
-                            data-src='{{ if eq .Params.image "" }}/img/mekah.jpg{{else}}{{ .Params.image }}{{end}}'
+                        <img class='img-fluid card-img-top lazy' 
+                            data-src='{{ if eq .Params.image nil }}/img/mekah.jpg{{else}}{{ .Params.image }}{{end}}' src="/apple-touch-icon-180x180.png"
                             alt='{{ .Title }}'>
                         </a>
                         <div class="card-body">
