@@ -9,7 +9,7 @@ type: kalender
 
 ### Kalender 2022
 
-{{< img src="/img/kalender/kalender-2022.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
+{{< img src="/apple-touch-icon-180x180.png" data-src="/img/kalender/kalender-2022.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
 [Pusat Info](https://wa.me/6281323123951)
 
 Ikhwan wal akhwat.., inilah
