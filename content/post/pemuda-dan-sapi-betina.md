@@ -1,7 +1,7 @@
 ---
 title: "Pemuda dan Sapi Betina"
 date: 2017-08-22T15:04:10.000Z
-categories: "Kajian"
+categories: Publikasi
 description: Di dalam surat al-Baqoroh ada kisah penting mengenai kata menyambut berkenan dengan salah pemuda yang jiwanya suci.
 image: /img/post/pemuda-dan-sapi-betina.jpg
 author: Team Redaksi

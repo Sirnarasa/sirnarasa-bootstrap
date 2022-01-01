@@ -1,7 +1,7 @@
 ---
 title: "Rencana Acara Maulid Abah Aos ke-75"
 date: 2017-08-26T21:25:05+07:00
-categories: "Berita"
+categories: Publikasi
 tags: ["sirnarasa"]
 description: >-
   Download Jadwal Maulid Abah Aos ke-75, Sirnarasa - Cisirri, Agustus 2017

@@ -1,7 +1,7 @@
 ---
 title: "Ashhabul Kahfi"
 date: 2017-08-30T01:04:53+07:00
-categories: Kajian
+categories: Publikasi
 tags: 
   - sirnarasa
 description: >-

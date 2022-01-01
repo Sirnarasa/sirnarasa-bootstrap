@@ -1,7 +1,7 @@
 ---
 title: 'Gerak Gerik Ahli Marifat Adalah Bala Tentara Alloh'
 date: 2017-08-23T15:04:10.000Z
-categories: "Kajian"
+categories: Publikasi
 description: >-
   Pengetahuan kebanyakan orang tentang bala tentara itu adalah pasukan manusia saja. Padahal pasukan belalang pun di dalam salah satu keterangan dinyatakan:
 image: /img/post/belalang.jpg

@@ -3,7 +3,7 @@ title: "Kejuaraan Pencak Silat JKTC10"
 date: 2018-10-25T22:46:39+07:00
 description: Kejuaraan pencak silat Nasional yang di adakan di Jakarta atau biasa di sebut JKTC yang ke 10 dilaksanakan pada bukan Oktober 2018.
 image: "/img/post/jktc1.webp"
-categories: "Berita"
+categories: Publikasi
 tags: ["Pencak Silat"]
 type: post
 ---
