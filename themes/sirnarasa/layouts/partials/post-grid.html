@@ -1,8 +1,7 @@
 <article class="card-post py-4">
     <div class="container">
         <div class="row">
-
-            {{ range last 6 (where .Site.Pages "Type" "post") }}
+            {{ range first 6 (where .Site.Pages "Type" "post") }}
                 <div class="col-md-4 mb-4 d-flex">
                     <div class="card">
                         <a href="{{ .Permalink }}">
