@@ -9,7 +9,7 @@ type: kalender
 
 ### Kalender 2022
 
-{{< img src="/apple-touch-icon-180x180.png" data-src="/img/kalender/kalender-2022.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
+{{< img src="/img/kalender/kalender-2022.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
 [Pusat Info](https://wa.me/6281323123951)
 
 Ikhwan wal akhwat.., inilah
@@ -41,65 +41,12 @@ Wassalaamu’alaikum Wr. Wb.
 
 {{< img src="/img/kalender/kalender-2021.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2021" >}}
 [Pusat Info](https://wa.me/6281323123951)
-Ikhwan wal akhwat.., inilah
-FITUR KALENDER PESANTREN SIRNARASA TAHUN 2021
 
-A. Photo Pangersa Abah Aos; 
 
-B. Photo Masjid tempat Manaqib; 
-
-C. Jadwal Sholat & Imsyakiyyah; 
-
-D. Penanggalan Masehi, Hijriyyah, Pasaran & Jawa;
-
-E. Libur Nasional & Cuti Bersama berdasarkan SKB 3 Menteri;
-
-F. Keterangan Khusus Ikhwan TQN PP. Suryalaya-Sirnarasa:
-
-- Jadwal Manaqib Pesantren Sirnarasa;
-- Hari TANBIH 1956;
-- Jadwal Sholat Rojab;
-- Malam Nisyfu Sya’ban;
-- Jadwal Sholat Lailatul Qodar;
-- Maulid Pesantren Sirnarasa dan Haul Umi Rosliani;
-- Hari Rabu Terakhir Bulan Shofar;
-- Hari Santri Nasional; 
-- Maulid Abah Aos berdasarkan perhitungan Hijriyyah dan Masehi;
-- Jadwal Manaqib Masjid Raya & Masjid Agung. 
 
 ### Kalender 2020
 
 {{< img src="/img/kalender/kalender-2020.jpeg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2020" >}}
-
-**Fitur Kalender Sirnarasa Tahun 2020**
-
-- Photo Pangersa Abah Aos;
-- Photo Masjid tempat Manaqib;
-- Jadwal Sholat & Imsyakiyyah;
-- Penanggalan Masehi, Hijriyyah, Pasaran & Jawa;
-- Libur Nasional & Cuti Bersama berdasarkan SKB 3 Menteri;
-- Keterangan Khusus Ikhwan TQN PP. Suryalaya-Sirnarasa:
-
-
-1. Jadwal Manaqib Pesantren Sirnarasa;
-2. Hari TANBIH 1956;
-3. Jadwal Sholat Rojab;
-4. Malam Nisyfu Sya’ban;
-5. Jadwal Sholat Lailatul Qodar;
-6. Maulid Pesantren Sirnarasa dan Haul Umi Rosliani;
-7. Hari Rabu Terakhir Bulan Shofar;
-8. Hari Santri Nasional; 
-9. Maulid Abah Aos berdasarkan perhitungan Hijriyyah dan Masehi;
-10. Jadwal Manaqib Masjid Raya & Masjid Agung. 
-
-Wassalaamu’alaikum Wr. Wb.
-
-------------
-Informasi dan Pemasaran:
-
-- Tampilan cetak dapat dilihat di www.sirnarasa.org/kalender
-- Pengiriman langsung ke berbagai daerah menggunakan jasa Travel, Pos Indonesia, JNE dan J&T. 
-- Pusat Info » SMS/WhatsApp: 081323123951
 
 ### Kalender 2019
 
