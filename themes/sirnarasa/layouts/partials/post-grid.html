@@ -5,7 +5,7 @@
                 <div class="col-md-4 mb-4 d-flex">
                     <div class="card">
                         <a href="{{ .Permalink }}">
-                        <img class='img-fluid card-img-top lazy' 
+                        <img class='img-fluid card-img-top lazy' width="350"
                             data-src='{{ if eq .Params.image nil }}/img/mekah.jpg{{else}}{{ .Params.image }}{{end}}' src="/img/3ikan.gif"
                             alt='{{ .Title }}'>
                         </a>
