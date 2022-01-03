@@ -3,5 +3,7 @@ title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 image: 
 description: 
-type: page
+categories: Berita
+tags: ["Pencak Silat"]
+type: post
 ---

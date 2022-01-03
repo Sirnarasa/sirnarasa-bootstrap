@@ -27,12 +27,12 @@ description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya 
 
 [menu]
     [[menu.main]]
-        name = "Publikasi"
-        url = "/post/"
-        weight = 1
-    [[menu.main]]
         name = "Tentang"
         url = "/tentang/"
+        weight = 1
+    [[menu.main]]
+        name = "Publikasi"
+        url = "/post/"
         weight = 2
     [[menu.main]]
         name = "Kalender"
