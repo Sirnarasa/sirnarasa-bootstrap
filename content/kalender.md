@@ -7,6 +7,28 @@ type: kalender
 
 ## Timeline Kalender Sirnarasa
 
+### Kalender 4 SR/1455 LQ
+
+**Telah Terbit..!**
+
+**KALENDER KHAS SIRNARASA**
+
+Tahun 4 SR./ 1455 LQ.
+
+[ versi 1 lembar ] 
+
+{{< img src="/img/kalender/kalender-khas-sirnarasa-44.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
+
+Isi Kalender :
+
+1. Kalender SR (Sirnarasa) atau LQ (Lailatul Qodar)
+2. Kalender Hijriyah
+3. Kalender Masehi + Hari Pasaran 
+
+Penanggalan telah disesuaikan dengan Kriteria Imkanur Rukyat MABIMS Baru yaitu tinggi hilal 3 derajat dan sudut elongasi 6,4 derajat oleh KH. Irfan Zidni Wahab Al Hasib bersama Labfalakruhani Al Hikam, Jakarta. 
+
+Wassalaamu’alaikum Wr. Wb.
+
 ### Kalender 2022
 
 {{< img src="/img/kalender/kalender-2022.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
