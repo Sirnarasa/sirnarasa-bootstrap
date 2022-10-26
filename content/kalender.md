@@ -7,6 +7,48 @@ type: kalender
 
 ## Timeline Kalender Sirnarasa
 
+### Kalender Umum 2023
+
+{{< img  src="/img/kalender/kalender-2023.jpg" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
+
+Assalaamu’alaikum Wr. Wb.
+
+ 
+
+Ikhwan wal akhwat.., inilah
+
+FITUR KALENDER UMUM PESANTREN SIRNARASA TAHUN 2023:
+
+ 
+
+A. Photo Suryalaya 1, 2 dan 3 (987);
+B. Jadwal Sholat & Imsyakiyyah;
+C. Penanggalan Masehi, Hijriyyah, Pasaran, Jawa dan Khas Sirnarasa;
+D. Hari Libur Nasional, berdasarkan SKB 3 Menteri;
+E. Keterangan Khusus Ikhwan TQN PP. Suryalaya Sirnarasa:
+
+1.    Jadwal Manaqib Pesantren Sirnarasa;
+
+2.    Hari TANBIH 1956/ Hari Ulang Tahun Peradaban Dunia;
+
+3.    Jadwal Sholat Rojab;
+
+4.    Malam Nisyfu Sya’ban;
+
+5.    Jadwal Sholat Syukru Lailatul Qodar;
+
+6.    Tahun Baru Khas Sirnarasa, Romadhon 1 th ke 5 SR;
+
+7.    Maulid Pesantren Sirnarasa dan Haul Umi Rosliani;
+
+8.    Hari Rabu Terakhir Bulan Shofar;
+
+9.    Hari Santri Nasional;
+
+10.  Maulid Abah Aos berdasarkan perhitungan Hijriyyah & Masehi;
+
+11.  Jadwal Manaqib Masjid Raya & Masjid Agung.
+
 ### Kalender 4 SR/1455 LQ
 
 **Telah Terbit..!**
@@ -17,7 +59,7 @@ Tahun 4 SR./ 1455 LQ.
 
 [ versi 1 lembar ] 
 
-{{< img src="/img/kalender/kalender-khas-sirnarasa-44.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
+{{< img src="/img/kalender/kalender-khas-sirnarasa-44.jpg" class="img-fluid lazy" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
 
 Isi Kalender :
 

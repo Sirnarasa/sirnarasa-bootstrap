@@ -18,14 +18,6 @@ Atas Nama: **YAYASAN SIRNARASA CISIRRI**
 
 Nomor Rekening Bank BJB (110): **0083230272100**
 
-## Nomor Rekening HIPDA Sirnarasa
-
-Atas Nama: **HIPDA Sirnarasa**
-
-Nomor Rekening BRI (002): **207501000388564**
-
-
-
 *Sebelum dan sesudahnya, kami haturkan Terima kasih sepenuh langit dan bumi.*
 
 وَالسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ
