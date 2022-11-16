@@ -9,7 +9,7 @@ type: kalender
 
 ### Kalender Umum 2023
 
-{{< img  src="/img/kalender/kalender-2023.png" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
+{{< img  src="/img/kalender/kalender-2023.png" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2023" >}}
 
 Assalaamu’alaikum Wr. Wb.
 
@@ -59,7 +59,7 @@ Tahun 4 SR./ 1455 LQ.
 
 [ versi 1 lembar ] 
 
-{{< img src="/img/kalender/kalender-khas-sirnarasa-44.jpg" class="img-fluid lazy" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
+{{< img src="/img/kalender/kalender-khas-sirnarasa-44.jpg" class="img-fluid lazy" alt="Kalender Pesantren Sirnarasa 2023" width="512" text="Kalender Pesantren Sirnarasa tahun 2023 khas sirnarasa 44" >}}
 
 Isi Kalender :
 
@@ -73,7 +73,7 @@ Wassalaamu’alaikum Wr. Wb.
 
 ### Kalender 2022
 
-{{< img src="/img/kalender/kalender-2022.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
+{{< img src="/img/kalender/kalender-2022.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa 2022" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
 [Pusat Info](https://wa.me/6281323123951)
 
 Ikhwan wal akhwat.., inilah
