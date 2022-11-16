@@ -9,7 +9,7 @@ type: kalender
 
 ### Kalender Umum 2023
 
-{{< img  src="/img/kalender/kalender-2023.jpg" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
+{{< img  src="/img/kalender/kalender-2023.png" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2022" >}}
 
 Assalaamu’alaikum Wr. Wb.
 
@@ -114,7 +114,7 @@ Wassalaamu’alaikum Wr. Wb.
 
 ### Kalender 2019
 
-{{< img src="/img/kalender-2019.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2019" >}}
+{{< img src="/img/kalender/kalender-2019.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2019" >}}
 
 Tabarruk MI3 dan Safari Manaqib & Ziarah Wali 10, inilah.. 
 FITUR KALENDER PESANTREN SIRNARASA TAHUN 2019
