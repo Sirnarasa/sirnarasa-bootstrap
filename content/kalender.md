@@ -9,7 +9,7 @@ type: kalender
 
 ### Kalender Umum 2023
 
-{{< img  src="/img/kalender/kalender-2023.png" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2023" >}}
+{{< img  src="/img/kalender/kalender-2023.jpg" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2023" >}}
 
 Assalaamu’alaikum Wr. Wb.
 
