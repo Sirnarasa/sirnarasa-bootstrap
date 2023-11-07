@@ -9,7 +9,37 @@ type: kalender
 
 ### Kalender Umum 2024
 
-{{< img  src="/img/kalender/kalender-2024-sm.jpg" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2023" >}}
+{{< img  src="/img/kalender/kalender-2024-sm.jpg" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2024" >}}
+
+𝘈𝘴𝘴𝘢𝘭𝘢𝘢𝘮𝘶’𝘢𝘭𝘢𝘪𝘬𝘶𝘮 𝘞𝘳. 𝘞𝘣.
+
+Ikhwan wal akhwat.., inilah
+𝗙𝗜𝗧𝗨𝗥 𝗞𝗔𝗟𝗘𝗡𝗗𝗘𝗥 𝗨𝗠𝗨𝗠 𝗣𝗘𝗦𝗔𝗡𝗧𝗥𝗘𝗡 𝗦𝗜𝗥𝗡𝗔𝗥𝗔𝗦𝗔 𝗧𝗔𝗛𝗨𝗡 𝟮𝟬𝟮𝟰:
+
+A. Photo Suryalaya 1, 2 dan 3 (987);
+
+B. Jadwal Sholat & 𝘐𝘮𝘴𝘺𝘢𝘬𝘪𝘺𝘺𝘢𝘩;
+
+C. Penanggalan 𝘔𝘢𝘴𝘦𝘩𝘪, 𝘏𝘪𝘫𝘳𝘪𝘺𝘺𝘢𝘩, Pasaran, Jawa dan Khas Sirnarasa;
+
+D. Hari Libur Nasional berdasarkan 𝗦𝗞𝗕 𝟯 𝗠𝗲𝗻𝘁𝗲𝗿𝗶;
+
+E. 𝗞𝗲𝘁𝗲𝗿𝗮𝗻𝗴𝗮𝗻 𝗞𝗵𝘂𝘀𝘂𝘀 Ikhwan TQN PP. Suryalaya Sirnarasa:
+
+1. Jadwal Manaqib Pesantren Sirnarasa
+2. Hari TANBIH 1956/ 𝗨𝗹𝗮𝗻𝗴 𝗧𝗮𝗵𝘂𝗻 𝗣𝗲𝗿𝗮𝗱𝗮𝗯𝗮𝗻 𝗗𝘂𝗻𝗶𝗮
+3. Jadwal 𝘚𝘩𝘰𝘭𝘢𝘵 𝘙𝘰𝘫𝘢𝘣
+4. Malam 𝘕𝘪𝘴𝘺𝘧𝘶 𝘚𝘺𝘢’𝘣𝘢𝘯
+5. Jadwal Sholat 𝘚𝘺𝘶𝘬𝘳𝘶 𝘓𝘢𝘪𝘭𝘢𝘵𝘶𝘭 𝘘𝘰𝘥𝘢𝘳;
+6. 𝗧𝗮𝗵𝘂𝗻 𝗕𝗮𝗿𝘂 𝗞𝗵𝗮𝘀 𝗦𝗶𝗿𝗻𝗮𝗿𝗮𝘀𝗮, Romadhon 1, 7 SR./ 1457 LQ
+7. Maulid Pesantren Sirnarasa & Haul Umi Rosliani
+8. Rabu Terakhir 𝘚𝘩𝘰𝘧𝘢𝘳
+9. Hari Santri Nasional
+10. Maulid Abah Aos berdasarkan perhitungan Hijriyyah & Masehi
+11. Jadwal Manaqib Masjid Raya & Masjid Agung
+12. Jadwal Pemilu Serentak 2024.
+
+𝘞𝘢𝘴𝘴𝘢𝘭𝘢𝘢𝘮𝘶’𝘢𝘭𝘢𝘪𝘬𝘶𝘮 𝘞𝘳. 𝘞𝘣.
 
 ### Kalender Umum 2023
 
