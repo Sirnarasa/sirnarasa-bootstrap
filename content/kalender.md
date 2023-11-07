@@ -7,6 +7,9 @@ type: kalender
 
 ## Timeline Kalender Sirnarasa
 
+#### Pusat Info » 081323123951
+
+
 ### Kalender Umum 2024
 
 {{< img  src="/img/kalender/kalender-2024-sm.jpg" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2024" >}}
