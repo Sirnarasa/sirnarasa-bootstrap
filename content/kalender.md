@@ -191,23 +191,23 @@ Inilah tampilan cetak **Kalender Pesantren Sirnarasa tahun 2018** yang telah dis
 
 _Ikut yang benar, bukan ikut yang besar._
 
-{{< img src="/img/kalender-2018.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2018" >}}
+{{< img src="/img//kalender/kalender-2018.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2018" >}}
 
 ### Kalender 2017
 
-{{< img src="/img/kalender-2017.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa tahun 2017" width="512" text="Kalender Pesantren Sirnarasa 2017" >}}
+{{< img src="/img//kalender/kalender-2017.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa tahun 2017" width="512" text="Kalender Pesantren Sirnarasa 2017" >}}
 
 ### Kalender 2016
 
-{{< img src="/img/kalender-2016.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa tahun 2016" width="512" text="Kalender Pesantren Sirnarasa 2016" >}}
+{{< img src="/img//kalender/kalender-2016.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa tahun 2016" width="512" text="Kalender Pesantren Sirnarasa 2016" >}}
 
 ### Kalender 2015
 
-{{< img src="/img/kalender-2015.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa tahun 2015" width="512" text="Kalender Pesantren Sirnarasa 2015" >}}
+{{< img src="/img//kalender/kalender-2015.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa tahun 2015" width="512" text="Kalender Pesantren Sirnarasa 2015" >}}
 
 ### Kalender 2014
 
-{{< img src="/img/kalender-2014.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa tahun 2014" width="512" text="Kalender Pesantren Sirnarasa 2014" >}}
+{{< img src="/img//kalender/kalender-2014.jpg" class="img-fluid" alt="Kalender Pesantren Sirnarasa tahun 2014" width="512" text="Kalender Pesantren Sirnarasa 2014" >}}
 
 ### Kritik & Saran
 
