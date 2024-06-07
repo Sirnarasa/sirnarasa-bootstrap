@@ -1,10 +1,11 @@
 {{define "main"}}
 {{ partial "nav.html" . }}
+{{ partial "header2.html" . }}
 <div class="pt-5"></div>
 <div class="my-5">
         <section id="blog" class="mt-3">
                 <div class="container">
-                    <h2 class="mb-3 text-danger">Kajian terbaru</h2>
+                    <h2 class="mb-3 text-danger">{{.Title}}</h2>
                     <div class="row">
                         <div class="col-lg-12">
                             <article class="card-post">
@@ -13,8 +14,8 @@
                                         <div class="col-md-4 mb-4 d-flex">
                                             <div class="card">
                                                 <a href="{{ .RelPermalink }}">
-                                        <img class='card-img-top' 
-                                            src='{{ if eq .Params.image "" }}https://unsplash.it/512/512?random{{else}}{{ .Params.image }}{{end}}'
+                                        <img class='card-img-top lazy' src="/img/lazy.webp"
+                                            data-src='{{ if eq .Params.image nil }}/img/lazy.webp{{else}}{{ .Params.image }}{{end}}'
                                             alt='{{ .Title }}'>
                                         </a>
                                                 <div class="card-body">

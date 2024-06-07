@@ -29,8 +29,8 @@ dan bahkan Luar Negeri.
 Anda dan Keluarga dapat belajar bersama di satu tempat. Kami memiliki fasilitas belajar untuk berbagai kalangan.
 Dari RA (TK) hingga Sekolah Tinggi Ilmu Dakwah (STID).
     
-  {{% img class="mb-3"  src="/img/belajar/drum-band.jpg"%}}
+{{% img class="mb-3"  src="/img/belajar/drum-band.jpg"%}}
 
-  {{% img class="mb-3" src="/img/belajar/sirnarasa-malam-milad75.jpg" %}}
+{{% img class="mb-3" src="/img/belajar/sirnarasa-malam-milad75.jpg" %}}
 
-  {{% img src="/img/belajar/seminar-internasional-2017.jpg" %}}
+{{% img src="/img/belajar/seminar-internasional-2017.jpg" %}}

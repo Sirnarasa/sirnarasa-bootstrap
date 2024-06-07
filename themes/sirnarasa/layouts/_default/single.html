@@ -1,6 +1,6 @@
 {{define "main"}}
 
-{{ partial "nav2" .}}
+{{ partial "nav" .}}
 
 <div class="container mt-5 mb-5">
     <div class="row">
@@ -25,7 +25,8 @@
                                 </span>
                                 {{ end }}
                             </div>
-                            {{ if .Params.image }}<img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}">{{end}}
+                            {{ if .Params.image }}<img class="img-fluid lazy"  src="/img/lazy.webp"
+                            data-src="{{ .Params.image }}" alt="{{ .Title }}">{{end}}
                         </div>
                         <div class="post-content">
                             {{ .Content }}

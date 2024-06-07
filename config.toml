@@ -27,9 +27,9 @@ description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya 
 
 [menu]
     [[menu.main]]
-        name = "Tentang"
-        url = "/tentang/"
-        weight = 1
+        name = "Lembaga"
+        url = "/lembaga/"
+        weight = 2
     [[menu.main]]
         name = "Publikasi"
         url = "/post/"
@@ -39,10 +39,14 @@ description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya 
         url = "/kalender/"
         weight = 3
     [[menu.main]]
-        name = "Kontak"
-        url = "/kontak/"
-        weight = 4
-    [[menu.main]]
         name = "Infaq"
         url = "/infaq/"
+        weight = 4
+    [[menu.main]]
+        name = "Kontak"
+        url = "/kontak/"
         weight = 5
+    [[menu.main]]
+        name = "Tentang"
+        url = "/tentang/"
+        weight = 6
