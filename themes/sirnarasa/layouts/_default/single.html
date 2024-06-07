@@ -1,46 +1,109 @@
-{{define "main"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="{{ .Permalink }}" />
 
-{{ partial "nav" .}}
+    <title>{{.Params.pageTitle | default .Title}} | {{.Site.Title}}</title>
+    <meta name="description" content="{{ .Description }}" />
 
-<div class="container mt-5 mb-5">
-    <div class="row">
+    {{ template "_internal/schema.html" . }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{.Permalink}}"
+        },
+        "headline": "{{.Title}}",
+        "description": "{{.Description}}",
+        "image": "{{if eq .Params.image nil}}/img/og-image.jpg{{else}}{{.Params.image}}{{end}}",
+        "author": {
+          "@type": "Organization",
+          "name": "Pesantren Sirnarasa",
+          "url": "https://www.sirnarasa.org/tentang"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Pesantren Sirnarasa",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.sirnarasa.org/apple-touch-icon.png"
+          }
+        },
+        "datePublished": "{{ .PublishDate | time.Format "2024-06-07" }}",
+        "dateModified": "{{ .Lastmod | time.Format "2024-06-07" }}"
+      }
+    </script>
+
+    <!-- Icon -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/sirnarasa.min.css" />
+  </head>
+  <body class="pb-5">
+    {{ partial "nav" .}}
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
         <div class="col-sm-12 col-lg-8 mb-5 card">
-            <article>
-                <div class="">
-                    <div class="card-body p-md-5">
-
-                        <div class="post-header mb-5">
-
-                            <h1 class="card-title mb-5">{{ .Title }}</h1>
-                            <div class="mb-3">
-                                <img data-src="{{ .Site.Author.image }}" class="rounded-circle lazy" width="32px" height="32px">
-                                <a class="align-middle text-dark" href="{{ .Site.Author.homepage }}">{{.Site.Author.name }}</a> <small class="align-middle text-muted"> - <time>{{.Date.Format "Jan, 02-01-2006" }} <br> Membaca dalam <strong>{{ .ReadingTime }}</strong>
-                                        menit </time></small>
-                            </div>
-                            <div>
-                                {{ range .Params.tags }}
-                                <span class="badge badge-success mb-3">
-                                    #<a class="text-white" href="/tags/{{ . | urlize }}">{{ . }}</a>
-                                </span>
-                                {{ end }}
-                            </div>
-                            {{ if .Params.image }}<img class="img-fluid lazy"  src="/img/lazy.webp"
-                            data-src="{{ .Params.image }}" alt="{{ .Title }}">{{end}}
-                        </div>
-                        <div class="post-content">
-                            {{ .Content }}
-                        </div>
-                        <div class="post-footer">
-                        </div>
-                    </div>
+          <article>
+            <div class="">
+              <div class="card-body p-md-5">
+                <div class="post-header mb-5">
+                  <h1 class="card-title mb-5">{{ .Title }}</h1>
+                  <div class="mb-3">
+                    <img
+                      data-src="{{ .Site.Author.image }}"
+                      class="rounded-circle lazy"
+                      width="32px"
+                      height="32px"
+                    />
+                    <a
+                      class="align-middle text-dark"
+                      href="{{ .Site.Author.homepage }}"
+                      >{{.Site.Author.name }}</a
+                    >
+                    <small class="align-middle text-muted">
+                      -
+                      <time
+                        >{{.Date.Format "Jan, 02-01-2006" }} <br />
+                        Membaca dalam <strong>{{ .ReadingTime }}</strong> menit
+                      </time></small
+                    >
+                  </div>
+                  <div>
+                    {{ range .Params.tags }}
+                    <span class="badge badge-success mb-3">
+                      #<a class="text-white" href="/tags/{{ . | urlize }}"
+                        >{{ . }}</a
+                      >
+                    </span>
+                    {{ end }}
+                  </div>
+                  {{ if .Params.image }}<img
+                    class="img-fluid lazy"
+                    src="/img/lazy.webp"
+                    data-src="{{ .Params.image }}"
+                    alt="{{ .Title }}"
+                  />{{end}}
                 </div>
-            </article>
+                <div class="post-content">{{ .Content }}</div>
+                <div class="post-footer"></div>
+              </div>
+            </div>
+          </article>
         </div>
 
-        <div class="col-sm-12 col-lg-4">
-            {{ partial "aside.html" . }}
-        </div>
+        <div class="col-sm-12 col-lg-4">{{ partial "aside.html" . }}</div>
+      </div>
     </div>
-</div>
-{{end}}
+    {{ partial "footer" . }} {{ partial "js-init" . }}
+  </body>
+</html>

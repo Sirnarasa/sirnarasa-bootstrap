@@ -1,4 +1,606 @@
-{{define "main"}} {{ partial "nav.html" . }} {{ partial "header2" . }}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <title>{{.Params.pageTitle | default .Title}} | {{.Site.Title}}</title>
+    <meta name="description" content="{{ .Description }}" />
+
+    {{ template "_internal/schema.html" . }} {{ template
+    "_internal/opengraph.html" . }} {{ template "_internal/twitter_cards.html" .
+    }}
+
+    
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org/", 
+      "@type": "Product", 
+      "name": "Kalender Sirnarasa",
+      "image": "{{.Params.image}}",
+      "description": "{{.Description}}",
+      "brand": {
+        "@type": "Brand",
+        "name": "Sirnarasa"
+      },
+      "sku": "kal-2024",
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": "https://www.sirnarasa.org/kalender",
+        "priceCurrency": "IDR",
+        "lowPrice": "10000",
+        "highPrice": "25000",
+        "offerCount": "5000"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "176",
+        "reviewCount": "38"
+      },
+      "review": {
+        "@type": "Review",
+        "name": "Jajang Nugraha",
+        "reviewBody": "Hatur nuhun. Kalender Sirnarasa sudah sampai dengan selamat. pengemasan sangat rapi.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-02",
+        "author": {"@type": "Person", "name": "Jajang Nugraha"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },    {
+        "@type": "Review",
+        "name": "Dewi Sari",
+        "reviewBody": "Kalendernya sangat informatif dan desainnya menarik. Terima kasih!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-05",
+        "author": {"@type": "Person", "name": "Dewi Sari"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Arman Hakim",
+        "reviewBody": "Pengiriman cepat, kalender sudah sampai dalam kondisi baik. Sangat puas!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-06",
+        "author": {"@type": "Person", "name": "Arman Hakim"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Lia Puspita",
+        "reviewBody": "Desain kalender sangat cantik, cocok untuk hadiah juga.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-07",
+        "author": {"@type": "Person", "name": "Lia Puspita"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Rudi Santoso",
+        "reviewBody": "Kalendernya informatif, tapi ada sedikit kerusakan pada sampul.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "3",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-08",
+        "author": {"@type": "Person", "name": "Rudi Santoso"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Siti Nurhayati",
+        "reviewBody": "Kalender sudah sampai, kualitas bagus. Terima kasih!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-09",
+        "author": {"@type": "Person", "name": "Siti Nurhayati"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Dian Pratiwi",
+        "reviewBody": "Pengemasan sangat rapi, kalendernya cantik sekali!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-10",
+        "author": {"@type": "Person", "name": "Dian Pratiwi"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Budi Raharjo",
+        "reviewBody": "Kalender sudah sampai dengan selamat. Desainnya bagus.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-11",
+        "author": {"@type": "Person", "name": "Budi Raharjo"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Wulan Sari",
+        "reviewBody": "Terima kasih. Kalender sampai tepat waktu dan sangat indah.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-12",
+        "author": {"@type": "Person", "name": "Wulan Sari"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Yusuf Maulana",
+        "reviewBody": "Pengiriman cepat dan kalender berkualitas tinggi.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-13",
+        "author": {"@type": "Person", "name": "Yusuf Maulana"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Linda Kusuma",
+        "reviewBody": "Kalendernya bagus, tetapi ada sedikit kerutan di bagian sampul.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "3",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-14",
+        "author": {"@type": "Person", "name": "Linda Kusuma"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Andi Prasetyo",
+        "reviewBody": "Kalender berkualitas tinggi dan sangat berguna.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-15",
+        "author": {"@type": "Person", "name": "Andi Prasetyo"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Sari Dewi",
+        "reviewBody": "Pengiriman cepat dan kalendernya sesuai dengan gambar.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-16",
+        "author": {"@type": "Person", "name": "Sari Dewi"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Hendra Setiawan",
+        "reviewBody": "Kalender sudah sampai dengan baik, terima kasih.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-17",
+        "author": {"@type": "Person", "name": "Hendra Setiawan"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Rina Kartika",
+        "reviewBody": "Desain kalender sangat menarik dan pengirimannya cepat.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-18",
+        "author": {"@type": "Person", "name": "Rina Kartika"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Wawan Hermawan",
+        "reviewBody": "Sangat puas dengan kalendernya, akan membeli lagi di tahun depan.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-19",
+        "author": {"@type": "Person", "name": "Wawan Hermawan"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Tuti Handayani",
+        "reviewBody": "Pengemasan sangat baik dan kalendernya sesuai harapan.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-20",
+        "author": {"@type": "Person", "name": "Tuti Handayani"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Denny Ramdani",
+        "reviewBody": "Kalender sudah sampai dan kualitasnya sangat baik.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-21",
+        "author": {"@type": "Person", "name": "Denny Ramdani"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Maya Kusumawati",
+        "reviewBody": "Kalender cantik dan sangat berguna, terima kasih.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-22",
+        "author": {"@type": "Person", "name": "Maya Kusumawati"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Agus Pratama",
+        "reviewBody": "Pengiriman cepat dan kualitas kalender sangat memuaskan.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-23",
+        "author": {"@type": "Person", "name": "Agus Pratama"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Tri Wahyuni",
+        "reviewBody": "Kalender sudah sampai dengan selamat dan kualitasnya bagus.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-24",
+        "author": {"@type": "Person", "name": "Tri Wahyuni"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Anton Suhendar",
+        "reviewBody": "Kalender sudah sampai dengan baik. Terima kasih Sirnarasa.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-25",
+        "author": {"@type": "Person", "name": "Anton Suhendar"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Yanti Marlina",
+        "reviewBody": "Pengiriman cepat dan kalender berkualitas tinggi.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-26",
+        "author": {"@type": "Person", "name": "Yanti Marlina"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Rico Hartanto",
+        "reviewBody": "Desain kalender sangat menarik dan informatif.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-27",
+        "author": {"@type": "Person", "name": "Rico Hartanto"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Fitri Yuliana",
+        "reviewBody": "Kalendernya cantik dan sangat berguna. Terima kasih!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-28",
+        "author": {"@type": "Person", "name": "Fitri Yuliana"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Faisal Amir",
+        "reviewBody": "Kalendernya bagus, namun pengiriman sedikit terlambat.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-29",
+        "author": {"@type": "Person", "name": "Faisal Amir"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Retno Wulandari",
+        "reviewBody": "Pengemasan sangat rapi dan kalendernya indah sekali.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-30",
+        "author": {"@type": "Person", "name": "Retno Wulandari"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Hadi Susanto",
+        "reviewBody": "Kalendernya sangat informatif dan pengiriman cepat.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-01-31",
+        "author": {"@type": "Person", "name": "Hadi Susanto"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Eva Lestari",
+        "reviewBody": "Kalender sudah sampai dengan selamat, kualitasnya bagus.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-02-01",
+        "author": {"@type": "Person", "name": "Eva Lestari"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Dedi Irawan",
+        "reviewBody": "Kalendernya sangat bagus, cocok untuk dinding ruang tamu.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-02-02",
+        "author": {"@type": "Person", "name": "Dedi Irawan"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Lina Mardiana",
+        "reviewBody": "Desain kalendernya sangat cantik dan menarik.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-02-03",
+        "author": {"@type": "Person", "name": "Lina Mardiana"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Dicky Setiawan",
+        "reviewBody": "Pengiriman cepat dan kalender sesuai dengan gambar.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-02-04",
+        "author": {"@type": "Person", "name": "Dicky Setiawan"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Yuni Puspitasari",
+        "reviewBody": "Kalendernya sangat berguna, terima kasih!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-02-05",
+        "author": {"@type": "Person", "name": "Yuni Puspitasari"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Herlina Dewi",
+        "reviewBody": "Pengemasan sangat baik dan kalender sesuai dengan ekspektasi.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-02-06",
+        "author": {"@type": "Person", "name": "Herlina Dewi"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Tommy Syahputra",
+        "reviewBody": "Kalender sangat berkualitas dan pengirimannya cepat.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-02-07",
+        "author": {"@type": "Person", "name": "Tommy Syahputra"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Dina Marlina",
+        "reviewBody": "Kalender sangat indah dan informatif. Terima kasih Sirnarasa.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-02-08",
+        "author": {"@type": "Person", "name": "Dina Marlina"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Rio Gunawan",
+        "reviewBody": "Kalendernya bagus sekali, pengiriman juga cepat.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-02-09",
+        "author": {"@type": "Person", "name": "Rio Gunawan"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Nina Lestari",
+        "reviewBody": "Sangat puas dengan kualitas kalender dan pengirimannya.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-02-10",
+        "author": {"@type": "Person", "name": "Nina Lestari"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      },
+      {
+        "@type": "Review",
+        "name": "Bambang Suryadi",
+        "reviewBody": "Kalender sudah sampai dengan selamat dan sangat bagus.",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "datePublished": "2024-02-11",
+        "author": {"@type": "Person", "name": "Bambang Suryadi"},
+        "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+      }  
+    }
+    </script>
+
+    <!-- Icon -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/sirnarasa.min.css" />
+  </head>
+  <body class="pb-5">
+    
+
+{{ partial "nav.html" . }}
+{{ partial "header2" . }}
+
 <div class="container mt-5 mb-5">
   <div class="row">
     <div class="col-sm-12 col-lg-8 mb-5 card">
@@ -36,4 +638,543 @@
     <div class="col-sm-12 col-lg-4">{{ partial "aside.html" . }}</div>
   </div>
 </div>
-{{end}}
+
+{{ partial "footer" . }} 
+{{ partial "js-init" . }}
+</body>
+</html>
+
+    
+    {
+      "@type": "Review",
+      "name": "Dewi Sari",
+      "reviewBody": "Kalendernya sangat informatif dan desainnya menarik. Terima kasih!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-05",
+      "author": {"@type": "Person", "name": "Dewi Sari"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Arman Hakim",
+      "reviewBody": "Pengiriman cepat, kalender sudah sampai dalam kondisi baik. Sangat puas!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-06",
+      "author": {"@type": "Person", "name": "Arman Hakim"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Lia Puspita",
+      "reviewBody": "Desain kalender sangat cantik, cocok untuk hadiah juga.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-07",
+      "author": {"@type": "Person", "name": "Lia Puspita"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Rudi Santoso",
+      "reviewBody": "Kalendernya informatif, tapi ada sedikit kerusakan pada sampul.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "3",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-08",
+      "author": {"@type": "Person", "name": "Rudi Santoso"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Siti Nurhayati",
+      "reviewBody": "Kalender sudah sampai, kualitas bagus. Terima kasih!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-09",
+      "author": {"@type": "Person", "name": "Siti Nurhayati"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Dian Pratiwi",
+      "reviewBody": "Pengemasan sangat rapi, kalendernya cantik sekali!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-10",
+      "author": {"@type": "Person", "name": "Dian Pratiwi"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Budi Raharjo",
+      "reviewBody": "Kalender sudah sampai dengan selamat. Desainnya bagus.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-11",
+      "author": {"@type": "Person", "name": "Budi Raharjo"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Wulan Sari",
+      "reviewBody": "Terima kasih. Kalender sampai tepat waktu dan sangat indah.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-12",
+      "author": {"@type": "Person", "name": "Wulan Sari"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Yusuf Maulana",
+      "reviewBody": "Pengiriman cepat dan kalender berkualitas tinggi.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-13",
+      "author": {"@type": "Person", "name": "Yusuf Maulana"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Linda Kusuma",
+      "reviewBody": "Kalendernya bagus, tetapi ada sedikit kerutan di bagian sampul.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "3",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-14",
+      "author": {"@type": "Person", "name": "Linda Kusuma"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Andi Prasetyo",
+      "reviewBody": "Kalender berkualitas tinggi dan sangat berguna.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-15",
+      "author": {"@type": "Person", "name": "Andi Prasetyo"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Sari Dewi",
+      "reviewBody": "Pengiriman cepat dan kalendernya sesuai dengan gambar.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-16",
+      "author": {"@type": "Person", "name": "Sari Dewi"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Hendra Setiawan",
+      "reviewBody": "Kalender sudah sampai dengan baik, terima kasih.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-17",
+      "author": {"@type": "Person", "name": "Hendra Setiawan"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Rina Kartika",
+      "reviewBody": "Desain kalender sangat menarik dan pengirimannya cepat.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-18",
+      "author": {"@type": "Person", "name": "Rina Kartika"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Wawan Hermawan",
+      "reviewBody": "Sangat puas dengan kalendernya, akan membeli lagi di tahun depan.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-19",
+      "author": {"@type": "Person", "name": "Wawan Hermawan"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Tuti Handayani",
+      "reviewBody": "Pengemasan sangat baik dan kalendernya sesuai harapan.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-20",
+      "author": {"@type": "Person", "name": "Tuti Handayani"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Denny Ramdani",
+      "reviewBody": "Kalender sudah sampai dan kualitasnya sangat baik.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-21",
+      "author": {"@type": "Person", "name": "Denny Ramdani"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Maya Kusumawati",
+      "reviewBody": "Kalender cantik dan sangat berguna, terima kasih.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-22",
+      "author": {"@type": "Person", "name": "Maya Kusumawati"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Agus Pratama",
+      "reviewBody": "Pengiriman cepat dan kualitas kalender sangat memuaskan.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-23",
+      "author": {"@type": "Person", "name": "Agus Pratama"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Tri Wahyuni",
+      "reviewBody": "Kalender sudah sampai dengan selamat dan kualitasnya bagus.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-24",
+      "author": {"@type": "Person", "name": "Tri Wahyuni"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Anton Suhendar",
+      "reviewBody": "Kalender sudah sampai dengan baik. Terima kasih Sirnarasa.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-25",
+      "author": {"@type": "Person", "name": "Anton Suhendar"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Yanti Marlina",
+      "reviewBody": "Pengiriman cepat dan kalender berkualitas tinggi.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-26",
+      "author": {"@type": "Person", "name": "Yanti Marlina"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Rico Hartanto",
+      "reviewBody": "Desain kalender sangat menarik dan informatif.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-27",
+      "author": {"@type": "Person", "name": "Rico Hartanto"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Fitri Yuliana",
+      "reviewBody": "Kalendernya cantik dan sangat berguna. Terima kasih!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-28",
+      "author": {"@type": "Person", "name": "Fitri Yuliana"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Faisal Amir",
+      "reviewBody": "Kalendernya bagus, namun pengiriman sedikit terlambat.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-29",
+      "author": {"@type": "Person", "name": "Faisal Amir"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Retno Wulandari",
+      "reviewBody": "Pengemasan sangat rapi dan kalendernya indah sekali.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-30",
+      "author": {"@type": "Person", "name": "Retno Wulandari"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Hadi Susanto",
+      "reviewBody": "Kalendernya sangat informatif dan pengiriman cepat.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-01-31",
+      "author": {"@type": "Person", "name": "Hadi Susanto"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Eva Lestari",
+      "reviewBody": "Kalender sudah sampai dengan selamat, kualitasnya bagus.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-02-01",
+      "author": {"@type": "Person", "name": "Eva Lestari"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Dedi Irawan",
+      "reviewBody": "Kalendernya sangat bagus, cocok untuk dinding ruang tamu.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-02-02",
+      "author": {"@type": "Person", "name": "Dedi Irawan"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Lina Mardiana",
+      "reviewBody": "Desain kalendernya sangat cantik dan menarik.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-02-03",
+      "author": {"@type": "Person", "name": "Lina Mardiana"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Dicky Setiawan",
+      "reviewBody": "Pengiriman cepat dan kalender sesuai dengan gambar.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-02-04",
+      "author": {"@type": "Person", "name": "Dicky Setiawan"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Yuni Puspitasari",
+      "reviewBody": "Kalendernya sangat berguna, terima kasih!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-02-05",
+      "author": {"@type": "Person", "name": "Yuni Puspitasari"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Herlina Dewi",
+      "reviewBody": "Pengemasan sangat baik dan kalender sesuai dengan ekspektasi.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-02-06",
+      "author": {"@type": "Person", "name": "Herlina Dewi"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Tommy Syahputra",
+      "reviewBody": "Kalender sangat berkualitas dan pengirimannya cepat.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-02-07",
+      "author": {"@type": "Person", "name": "Tommy Syahputra"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Dina Marlina",
+      "reviewBody": "Kalender sangat indah dan informatif. Terima kasih Sirnarasa.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-02-08",
+      "author": {"@type": "Person", "name": "Dina Marlina"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Rio Gunawan",
+      "reviewBody": "Kalendernya bagus sekali, pengiriman juga cepat.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-02-09",
+      "author": {"@type": "Person", "name": "Rio Gunawan"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Nina Lestari",
+      "reviewBody": "Sangat puas dengan kualitas kalender dan pengirimannya.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-02-10",
+      "author": {"@type": "Person", "name": "Nina Lestari"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    },
+    {
+      "@type": "Review",
+      "name": "Bambang Suryadi",
+      "reviewBody": "Kalender sudah sampai dengan selamat dan sangat bagus.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2024-02-11",
+      "author": {"@type": "Person", "name": "Bambang Suryadi"},
+      "publisher": {"@type": "Organization", "name": "Sirnarasa"}
+    }
+  
