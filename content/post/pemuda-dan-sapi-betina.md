@@ -70,5 +70,4 @@ _Wa kanan nabiyu shollallohu 'alayhi wasallama yulaqqinu hadzihil kalimatath tho
 
 "Adalah Nabi Saw mentalqinkan kalimah thoyibah ini kepada para shahabat, untuk mensucikan hati mereka, membersihkan jiwanya dan menghantarkan mereka ke hadlrot Alloh dan kemenangan yang suci."
 
-Sumber: Menyambut Pecinta Kesucian Jiwa hal. 20-28
-
+Sumber: **Menyambut Pecinta Kesucian Jiwa hal. 20-28**

@@ -1,24 +1,42 @@
-{{define "main"}}
-
-{{ partial "nav.html" . }}
-{{ partial "header2" . }}
+{{define "main"}} {{ partial "nav.html" . }} {{ partial "header2" . }}
 
 <div class="container mt-5 mb-5">
-    <div class="row">
-        <div class="col-sm-12 col-lg-12 mb-5 card">
-            <article>
-                <div class="">
-                    <div class="card-body p-md-5">
-                        <div class="post-content">
-                            {{ .Content }}
-                        </div>
-                        <div class="post-footer">
-                        </div>
-                    </div>
+  <div class="row">
+    <div class="col-sm-12 col-lg-12 mb-5 card">
+      <article>
+        <div class="">
+          <div class="card-body p-md-5">
+            <div class="post-content">
+              <h3 class="my-5">
+                Silahkan mengisi formulir dibawah ini untuk menghubungi
+                Pesantren Sirnarasa
+              </h3>
+              <div class="row">
+                <div class="col-md-6">
+                  {{partial "widget/formulir-kontak.html" . }}
                 </div>
-            </article>
+                <div class="col-md-6">
+                  {{partial "widget/google-map.html" . }}
+
+                  <div class="d-flex justify-content-center">
+                    <a
+                      class="btn btn-primary my-3"
+                      href="https://maps.google.com/maps/dir//Pesantren+Sirnarasa+Komp.+Pesantren+Sirnarasa+RT+010%2F005,+Dsn.+Ciceuri+Ciomas+Kec.+Panjalu,+Kabupaten+Ciamis,+Jawa+Barat+46264/@-7.158351,108.286626,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x2e6f442d687792c9:0x5bf830f02bf554bb"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Arahkan saya</a
+                    >
+                  </div>
+                </div>
+              </div>
+              {{ .Content }}
+            </div>
+            <div class="post-footer"></div>
+          </div>
         </div>
+      </article>
     </div>
+  </div>
 </div>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 {{end}}
