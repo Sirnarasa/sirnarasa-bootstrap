@@ -1,16 +1,16 @@
 {{ if isset .Site.Taxonomies "categories" }}
 {{ if not (eq (len .Site.Taxonomies.categories) 0) }}
 <div class="card card-block mb-3">
-  <h4 class="ml-3 card-title">Kategori</h4>
+  <h4 class="ml-3 mt-3 card-title">Kategori</h4>
+  <hr>
   <div class="card-text">
     <div class="widget">
       <ul style="list-style: none">
         {{ range $name, $items := .Site.Taxonomies.categories }}
         <li class="category-list-item text-capitalize">
-            <a href="{{ (print "categories/" ($name | urlize | lower) "/") | relURL }}">
-                <b>{{ $name }}</b>
+            <a href='{{ (print "categories/" ($name | urlize | lower) "/") | relURL }}'  class="btn btn-dark my-1 btn-sm">
+                <b>{{ $name }}</b> <span class="badge text-dark bg-warning">{{ len $items }}</span>
             </a>
-            <span class="category-list-count">({{ len $items }})</span>
         </li>
         {{ end }}
       </ul>

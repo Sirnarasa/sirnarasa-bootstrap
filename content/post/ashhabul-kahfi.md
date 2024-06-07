@@ -1,7 +1,7 @@
 ---
 title: "(Ashabulkahfi) 7 Pemuda Beriman | Ashhabul Kahfi "
 date: 2017-08-30T01:04:53+07:00
-categories: Publikasi
+categories: Kajian
 tags: 
   - sirnarasa
 description: >-

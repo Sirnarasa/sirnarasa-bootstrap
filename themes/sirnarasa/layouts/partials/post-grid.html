@@ -1,24 +1,31 @@
 <article class="card-post py-4">
-    <div class="container">
-        <div class="row">
-            {{ range first 6 (where .Site.Pages "Type" "post") }}
-                <div class="col-md-4 mb-4 d-flex">
-                    <div class="card">
-                        <a href="{{ .Permalink }}">
-                        <img class='img-fluid card-img-top lazy' width="350"
-                            data-src='{{ if eq .Params.image nil }}/img/mekah.jpg{{else}}{{ .Params.image }}{{end}}' src="/img/3ikan.gif"
-                            alt='{{ .Title }}'>
-                        </a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
-                            </h4>
-                            <a href="/categories/{{.Params.categories | urlize }}"><span class="badge badge-success">{{.Params.categories}}</span></a>
-                        </div>
-                    </div>
-                </div>
-            {{ end }}
-
+  <div class="container">
+    <div class="row">
+      {{ range first 6 (where .Site.Pages "Type" "post") }}
+      <div class="col-md-4 mb-4 d-flex">
+        <div class="card">
+          <a href="{{ .Permalink }}">
+            <img
+              class="img-fluid card-img-top lazy"
+              width="350"
+              src="/img/lazy.webp"
+              data-src="{{ if eq .Params.image nil }}/img/lazy.webp{{else}}{{ .Params.image }}{{end}}"
+              alt="{{ .Title }}"
+            />
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
+            </h4>
+            <a href="/categories/{{.Params.categories | urlize }}"
+              ><span class="badge badge-success"
+                >{{.Params.categories}}</span
+              ></a
+            >
+          </div>
         </div>
+      </div>
+      {{ end }}
     </div>
+  </div>
 </article>

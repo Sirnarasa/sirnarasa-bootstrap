@@ -1,12 +1,40 @@
-{{define "main"}}
+{{define "main"}} {{ partial "nav" . }} {{ partial "header-3" . }}
 
-{{ partial "nav" . }}
+<div class="row my-5">
+  <div class="col-md-4">
+    <div class="card">
+      <img
+      src="/img/sirnarasa.webp"
+        data-src="/img/abahjagat-manaqib-2.webp"
+        class="lazy card-img-top"
+        alt="kegiatan manaqib"
+      />
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img
+      src="/img/sirnarasa.webp"
+        data-src="/img/santri-mondok-sirnarasa.webp"
+        class="lazy card-img-top"
+        alt="santri sirnarasa"
+      />
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img
+      src="/img/sirnarasa.webp"
+        data-src="/img/manaqib.webp"
+        class="lazy card-img-top"
+        alt="kegiatan manaqib"
+      />
+    </div>
+  </div>
+</div>
 
-{{ partial "header" . }}
 
 <div class="text-center">
-    <h3>Publikasi Terbaru</h3>
+  <h3>Publikasi & Kajian Terbaru</h3>
 </div>
-{{ partial "post-grid" . }}
-
-{{end}}
+{{ partial "post-grid" . }} {{end}}

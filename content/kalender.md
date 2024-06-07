@@ -12,7 +12,7 @@ type: kalender
 
 ### Kalender Umum 2024
 
-{{< img  src="/img/kalender/kalender-2024.jpg" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2024" >}}
+{{< img  src="/img/kalender/kalender-2024-lg.jpg" alt="Kalender Pesantren Sirnarasa" width="512" text="Kalender Pesantren Sirnarasa tahun 2024" >}}
 
 𝘈𝘴𝘴𝘢𝘭𝘢𝘢𝘮𝘶’𝘢𝘭𝘢𝘪𝘬𝘶𝘮 𝘞𝘳. 𝘞𝘣.
 
