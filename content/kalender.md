@@ -2,13 +2,13 @@
 title: "Kalender Pesantren Sirnarasa"
 description: Kalender Pesantren Sirnarasa Cisirri
 type: kalender
+image: /img/kalender/kalender-2024-md.jpg
 ---
 # **Assalaamu’alaikum Wr. Wb.**
 
 ## Timeline Kalender Sirnarasa
 
 #### Pusat Info » 081323123951
-
 
 ### Kalender Umum 2024
 

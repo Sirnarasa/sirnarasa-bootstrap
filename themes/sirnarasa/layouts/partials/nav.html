@@ -4,12 +4,12 @@
       class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
       href="{{ .Site.BaseURL }}"
       ><img
-        src="/apple-touch-icon.png"
+        src="/apple-touch-icon-57x57.png"
         width="50"
         height="50"
         class="d-inline-block align-top rounded-circle"
         alt="Pesantren Sirnarasa"
-      /></a
+      /> Sirnarasa</a
     >
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +18,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
     {{ $currentPage := . }}
-    <ul class="navbar-nav ml-auto me-auto mb-2 mb-lg-0">
+    <ul class="navbar-nav col-lg-6 justify-content-lg-center me-auto">
       {{ range .Site.Menus.main }} {{ if .HasChildren }}
 
       <li class="nav-item dropdown">

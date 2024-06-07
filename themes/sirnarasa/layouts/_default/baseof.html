@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="{{ .Permalink }}">
-    
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="{{ .Permalink }}" />
+
     <title>{{.Params.pageTitle | default .Title}} | {{.Site.Title}}</title>
-    <meta name="description" content="{{ .Description }}">
-    
-    {{ template "_internal/schema.html" . }}
-    {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
-    
-    
+    <meta name="description" content="{{ .Description }}" />
+
+    {{ template "_internal/schema.html" . }} {{ template
+    "_internal/opengraph.html" . }} {{ template "_internal/twitter_cards.html" .
+    }}
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollegeOrUniversity",
+        "name": "Pesantren Sirnarasa",
+        "alternateName": "Yayasan Pesantren Sirnarasa",
+        "url": "https://www.sirnarasa.org",
+        "logo": "https://www.sirnarasa.org/apple-touch-icon.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+622652796956",
+          "contactType": "customer service",
+          "contactOption": "TollFree",
+          "areaServed": "ID",
+          "availableLanguage": "Indonesian"
+        },
+        "sameAs": "https://fb.com/pesantrensirnarasa"
+      }
+    </script>
+
     <!-- Icon -->
     <link rel="icon" href="/favicon.ico" />
-    
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/sirnarasa.min.css"/>
-</head>
-<body class="pb-5">
-    {{- block "main" . }}
-    {{- end }}
 
-    {{ partial "footer" . }}
-    {{ partial "js-init" . }}
-</body>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/sirnarasa.min.css" />
+  </head>
+  <body class="pb-5">
+    {{- block "main" . }} {{- end }} {{ partial "footer" . }} {{ partial
+    "js-init" . }}
+  </body>
 </html>

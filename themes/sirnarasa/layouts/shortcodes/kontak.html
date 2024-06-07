@@ -1,49 +1,35 @@
-<div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="well well-sm">
-              <form name="Kontak-Sirnarasa" class="form-horizontal" action="thank-you" method="post" netlify>
-              <fieldset>
-        
-                <!-- Name input-->
-                <div class="form-group">
-                  <label class="col-md-3 control-label" for="name">Nama</label>
-                  <div class="col-md-9">
-                    <input id="name" name="Nama" type="text" placeholder="Nama Anda" class="form-control">
-                  </div>
-                </div>
-        
-                <!-- Email input-->
-                <div class="form-group">
-                  <label class="col-md-3 control-label" for="email">Email</label>
-                  <div class="col-md-9">
-                    <input id="email" name="Email" type="text" placeholder="Alamat email" class="form-control">
-                  </div>
-                </div>
-        
-                <!-- Message body -->
-                <div class="form-group">
-                  <label class="col-md-3 control-label" for="message">Pesan Anda</label>
-                  <div class="col-md-9">
-                    <textarea class="form-control" id="message" name="message" placeholder="Masukan pesan Anda disini..." rows="5"></textarea>
-                  </div>
-                </div>
-        
-                <!-- Form actions -->
-                <div class="form-group">
-                  <div class="col-md-9 text-right">
-                    <button
-                    type="submit"
-                    class="g-recaptcha btn btn-primary"
-                    data-sitekey="6LcN4SwUAAAAAFu_YEQtP1Vk5_K36tzJUipuoqL6"
-                    data-callback="thank-you">
-                    Kirim
-                    </button>
-                  </div>
-                </div>
-              </fieldset>
-              </form>
-            </div>
-          </div>
-        </div>
-    </div>
+
+<form
+name="Kontak-Sirnarasa"
+class="form-horizontal my-5"
+action="/thank-you"
+method="post"
+netlify
+>
+  <div class="mb-3">
+    <label for="name" class="form-label">Nama</label>
+    <input type="text" class="form-control" id="name" placeholder="Masukkan Nama Anda">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Masukkan Email Anda">
+  </div>
+  
+  <div class="mb-3">
+    <label for="phone" class="form-label">Nomor HP</label>
+    <input type="tel" class="form-control" id="phone" placeholder="Masukkan Nomor HP Anda">
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Pesan</label>
+    <textarea class="form-control" id="message" rows="5" placeholder="Masukkan pesan Anda"></textarea>
+  </div>
+  
+  <button
+  type="submit"
+  class="g-recaptcha btn btn-primary"
+  data-sitekey="6LcN4SwUAAAAAFu_YEQtP1Vk5_K36tzJUipuoqL6"
+  data-callback="thank-you"
+>
+  Kirim
+</button>
+</form>
