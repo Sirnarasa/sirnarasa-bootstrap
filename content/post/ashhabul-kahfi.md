@@ -1,9 +1,10 @@
 ---
 title: "(Ashabulkahfi) 7 Pemuda Beriman | Ashhabul Kahfi "
 date: 2017-08-30T01:04:53+07:00
-categories: Kajian
+categories: 
+  - Kajian
 tags: 
-  - sirnarasa
+  - Sirnarasa
 description: >-
   Di dalam surat al-Kahfi Alloh SWT mengamankan para pemuda pecinta kesucian jiwa, ditidurkan selama 309 tahun.
 image: /img/post/ashhabul-kahfi1.jpg

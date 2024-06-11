@@ -9,7 +9,7 @@
                 <div class="col-lg-12">
                     <article class="card-post">
                         <div class="row">
-                                {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 9 }} {{ range $paginator.Pages }}
+                                {{ $paginator := .Paginate (where .Data.Pages "Type" "page") 9 }} {{ range $paginator.Pages }}
                             <div class="col-6 col-md-4 mb-4 d-flex">
                                 <div class="card">
                                         <a href="{{ .RelPermalink }}">
