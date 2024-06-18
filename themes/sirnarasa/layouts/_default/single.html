@@ -60,15 +60,15 @@
                   <h1 class="card-title mb-5">{{ .Title }}</h1>
                   <div class="mb-3">
                     <img
-                      data-src="{{ .Site.Author.image }}"
+                      data-src="{{ .Site.Params.author.image }}"
                       class="rounded-circle lazy"
                       width="32px"
                       height="32px"
                     />
                     <a
                       class="align-middle text-dark"
-                      href="{{ .Site.Author.homepage }}"
-                      >{{.Site.Author.name }}</a
+                      href="{{ .Site.Params.author.homepage }}"
+                      >{{.Site.Params.author.name }}</a
                     >
                     <small class="align-middle text-muted">
                       -

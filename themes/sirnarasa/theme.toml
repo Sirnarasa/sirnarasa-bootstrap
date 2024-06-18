@@ -5,13 +5,13 @@ name = "Sirnarasa"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://www.okabrionz .com/"
 tags = []
 features = []
 min_version = "0.26"
 
 [author]
-  name = ""
+  name = "Oka bRionZ"
   homepage = ""
 
 # If porting an existing theme

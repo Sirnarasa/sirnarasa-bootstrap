@@ -2,11 +2,8 @@ baseURL = "https://www.sirnarasa.org/"
 languageCode = "id-id"
 title = "Pesantren Sirnarasa"
 
-# Agar front-matter pakai format YAML
 MetaDataFormat = "yaml"
 
-# untuk apply temanya
-themesDir = "themes"
 theme = "sirnarasa"
 
 # Shortname disqus, silahkan sesuaikan
@@ -19,7 +16,7 @@ googleAnalytics = ""
 description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya Indonesia. Pesantren Sirnarasa Cisirri, Kajembaran Rohmaniyyah."
 
 # Biodata Author
-[author]
+[params.author]
     name = "Team Redaksi"
     homepage = "https://fb.com/pasantrensirnarasa"
     bio = "Web Developer Indonesia."
