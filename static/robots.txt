@@ -1,0 +1,4 @@
+Sitemap: https://www.sirnarasa.org/sitemap.xml
+
+User-agent: *
+Allow: /

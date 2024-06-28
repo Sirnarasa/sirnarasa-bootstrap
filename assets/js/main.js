@@ -1,0 +1,1 @@
+console.log("Dikembangkan oleh okabrionz.com")
