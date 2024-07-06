@@ -36,7 +36,11 @@
     <link rel="icon" href="/favicon.ico" />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/sirnarasa.min.css" />
+    <style>
+      {{- partial "sirnarasa.min.css" . | safeCSS -}}
+    </style>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v20.0" nonce="3S48k8CP"></script>
   </head>
   <body class="pb-5">
     {{- block "main" . }} {{- end }} {{ partial "footer" . }} {{ partial

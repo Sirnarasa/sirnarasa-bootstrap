@@ -43,7 +43,7 @@ description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya 
         parent = "Artikel"
     [[menu.main]]
         name = "Maklumat"
-        url = "/post/maklumat/"
+        url = "/maklumat/"
         weight = 2
         parent = "Artikel"
     [[menu.main]]
