@@ -1,0 +1,176 @@
+baseURL = "https://www.sirnarasa.org/"
+languageCode = "id-id"
+title = "Pesantren Sirnarasa"
+
+MetaDataFormat = "yaml"
+
+theme = "sirnarasa"
+
+# Shortname disqus, silahkan sesuaikan
+DisqusShortname = ""
+
+# Untuk Google Analytic, silahkan sesuikan
+googleAnalytics = "" 
+
+# Untuk deskripsi tag meta di homepage
+description = "Pesantren Peradaban Dunia dan Destinasi Wisata Religi dan Budaya Indonesia. Pesantren Sirnarasa Cisirri, Kajembaran Rohmaniyyah."
+
+# Biodata Author
+[params.author]
+    name = "Team Redaksi"
+    homepage = "https://fb.com/pasantrensirnarasa"
+    bio = "Web Developer Indonesia."
+    image = "https://d33wubrfki0l68.cloudfront.net/bd1bafe187b7437ef90e63f6c6a1bb26e20bdf01/f89f7/favicon-32x32.png"
+
+[menu]
+    [[menu.main]]
+        name = "Lembaga"
+        url = "/lembaga/"
+        weight = 2
+    [[menu.main]]
+        name = "Artikel"
+        url = "/post/"
+        weight = 2
+    [[menu.main]]
+        name = "Publikasi"
+        url = "/categories/publikasi/"
+        weight = 1
+        parent = "Artikel"
+    [[menu.main]]
+        name = "Kajian"
+        url = "/categories/kajian/"
+        weight = 2
+        parent = "Artikel"
+    [[menu.main]]
+        name = "Maklumat"
+        url = "/maklumat/"
+        weight = 2
+        parent = "Artikel"
+    [[menu.main]]
+        name = "Semua Artikel"
+        url = "/post/"
+        weight = 3
+        parent = "Artikel"
+    [[menu.main]]
+        name = "Kalender"
+        url = "/kalender/"
+        weight = 3
+    [[menu.main]]
+        name = "Infaq"
+        url = "/infaq/"
+        weight = 4
+    [[menu.main]]
+        name = "Kontak"
+        url = "/kontak/"
+        weight = 5
+    [[menu.main]]
+        name = "Tentang"
+        url = "/tentang/"
+        weight = 6
+
+
+[security]
+  enableInlineShortcodes = false
+  [security.funcs]
+    getenv = ['^HUGO_']
+
+[module]
+[[module.mounts]]
+source = 'assets'
+target = 'assets'
+[[module.mounts]]
+source = 'static'
+target = 'assets'
+
+
+############################ Caches ##############################
+[caches]
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+
+############################ Markup ##############################
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      inline = false
+      keepCSS2 = true
+      precision = 0
+    [minify.tdewolff.html]
+      keepComments = false
+      keepConditionalComments = false
+      keepDefaultAttrVals = true
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepSpecialComments = true
+      keepWhitespace = false
+      templateDelims = ['', '']
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 0
+      version = 2022
+    [minify.tdewolff.json]
+      keepNumbers = false
+      precision = 0
+    [minify.tdewolff.svg]
+      inline = false
+      keepComments = false
+      precision = 0
+    [minify.tdewolff.xml]
+      keepWhitespace = false
+
+
+[build]
+  writeStats = true
+
+[markup]
+  [markup.postCSS]
+    enable = true
+    config = "postcss.config.js"
+
+  [markup.purgeCSS]
+    enabled = true
+    content = ["layouts/**/*.html", "content/**/*.md", "assets/js/**/*.js", "themes/pico/layouts/**/*.html", "themes/pico/assets/js/**/*.js", "themes/pico/assets/css/**/*.css"]
+    safelist = ["swiper-container", "swiper-slide", "swiper-pagination", "swiper-button-next", "swiper-button-prev"]
+    
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[markup.highlight]
+style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 5
+ordered = true
+
+
+########################### Media types ###########################
+[mediaTypes]
+[mediaTypes."application/manifest+json"]
+suffixes = ["webmanifest"]
+
+
+########################### Output Format ##########################
+[outputFormats]
+[outputFormats.WebAppManifest]
+mediaType = "application/manifest+json"
+rel = "manifest"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"

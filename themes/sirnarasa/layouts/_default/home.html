@@ -1,38 +1,32 @@
 {{define "main"}} {{ partial "nav" . }} {{ partial "header-3" . }}
-
-<div class="row my-5">
-  <div class="col-md-4">
-    <div class="card">
-      <img
-      src="/img/abahjagat-manaqib-2-l.webp"
-        data-src="/img/abahjagat-manaqib-2.webp"
-        class="lazy card-img-top"
-        alt="kegiatan manaqib"
-      />
+<div class="container-fluid">
+  <div class="row my-5">
+    <div class="col-md-4">
+      <div class="card">
+          {{ $image := resources.Get "/img/abahjagat-manaqib-2.jpg" }}
+        <img class="card-img-top img-fluid lazy" height="720" width="1080"
+          src='{{ ( $image.Resize "50x webp" ).RelPermalink }}'
+          data-src='{{ ($image.Resize "720x webp" ).RelPermalink }}' alt="{{.Title}}" />
+      </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <img
-      src="/img/santri-mondok-sirnarasa-l.webp"
-        data-src="/img/santri-mondok-sirnarasa.webp"
-        class="lazy card-img-top"
-        alt="santri sirnarasa"
-      />
+    <div class="col-md-4">
+      <div class="card">
+        {{ $image := resources.Get "/img/santri-mondok-sirnarasa.jpg" }}
+        <img class="card-img-top img-fluid lazy" height="720" width="1080"
+          src='{{ ( $image.Resize "50x webp" ).RelPermalink }}'
+          data-src='{{ ($image.Resize "720x webp" ).RelPermalink }}' alt="{{.Title}}" />
+      </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <img
-      src="/img/manaqib-l.webp"
-        data-src="/img/manaqib.webp"
-        class="lazy card-img-top"
-        alt="kegiatan manaqib"
-      />
+    <div class="col-md-4">
+      <div class="card">
+        {{ $image := resources.Get "/img/manaqib.jpg" }}
+        <img class="card-img-top img-fluid lazy" height="720" width="1080"
+          src='{{ ( $image.Resize "50x webp" ).RelPermalink }}'
+          data-src='{{ ($image.Resize "720x webp" ).RelPermalink }}' alt="{{.Title}}" />
+      </div>
     </div>
   </div>
 </div>
-
 
 <div class="text-center">
   <h3>Publikasi & Kajian Terbaru</h3>
