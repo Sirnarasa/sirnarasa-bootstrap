@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "single",
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "selector-pseudo-element-colon-notation": "double",
+    "declaration-block-trailing-semicolon": "always",
+    "declaration-colon-space-after": "always",
+    "declaration-colon-space-before": "never",
+    "block-opening-brace-space-before": "always",
+    "comment-empty-line-before": "always",
+    "comment-whitespace-inside": "always",
+    "scss/at-rule-no-unknown": true,
+    "scss/selector-no-redundant-nesting-selector": true
+  },
+  "ignoreFiles": [
+    "public/**/*",
+    "resources/**/*",
+    "static/**/*"
+  ]
+}

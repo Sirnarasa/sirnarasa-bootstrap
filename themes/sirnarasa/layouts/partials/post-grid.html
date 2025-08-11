@@ -6,25 +6,26 @@
         <div class="card">
           <a href="{{ .Permalink }}">
             {{if eq .Params.image nil }}
-            <img
-              class="img-fluid card-img-top lazy"
-              width="350"
-              height="350"
-              src="/img/lazy.webp"
+            <img class="img-fluid card-img-top lazy" width="350" height="350" src="/img/lazy.webp"
               data-src="{{ if eq .Params.image nil }}/img/lazy.webp{{else}}{{ .Params.image }}{{end}}"
-              alt="{{ .Title }}"
-            />
+              alt="{{ .Title }}" />
             {{else}}
+            {{ if strings.HasPrefix .Params.image "http" }}
+            <img class="card-img-top img-fluid lazy" height="263" width="350"
+              src="/img/lazy.webp"
+              data-src="{{ .Params.image }}" alt="{{ .Title }}" />
+            {{ else }}
             {{ $image := resources.Get .Params.image }}
-        <img class="card-img-top img-fluid lazy" height="263" width="350"
-          src='{{ ( $image.Resize "50x webp" ).RelPermalink }}'
-          data-src='{{ ($image.Resize "x350 webp" ).RelPermalink }}' alt="{{.Title}}" />
-          {{end}}
+            <img class="card-img-top img-fluid lazy" height="263" width="350"
+              src='{{ ( $image.Resize "50x webp" ).RelPermalink }}'
+              data-src='{{ ($image.Resize "x350 webp" ).RelPermalink }}' alt="{{.Title}}" />
+            {{ end }}
+            {{ end }}
           </a>
           <div class="card-body">
-            <h4 class="card-title">
+            <p class="card-title">
               <a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
-            </h4>
+            </p>
           </div>
         </div>
       </div>

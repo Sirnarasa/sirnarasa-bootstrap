@@ -1,0 +1,45 @@
+{
+  "name": "sirnarasa-website",
+  "version": "2.0.0",
+  "description": "Website Pesantren Sirnarasa - Indonesian Red-White Futuristic Theme",
+  "keywords": [
+    "hugo", 
+    "static-site", 
+    "pesantren", 
+    "indonesia", 
+    "islamic-education",
+    "bootstrap",
+    "scss"
+  ],
+  "author": "okabrionz.com",
+  "license": "MIT",
+  "scripts": {
+    "dev": "hugo server --disableFastRender --navigateToChanged",
+    "build": "hugo --minify",
+    "build:production": "NODE_ENV=production hugo --minify --gc",
+    "preview": "hugo server --environment production --minify",
+    "clean": "rm -rf public resources",
+    "format": "prettier --write 'assets/**/*.{js,css,scss}'",
+    "lint": "stylelint 'assets/**/*.{css,scss}' && eslint 'assets/**/*.js'"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.52.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^3.0.3",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard-scss": "^11.1.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "hugo": {
+    "version": "0.120.0"
+  }
+}

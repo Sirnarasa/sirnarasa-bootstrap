@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="canonical" href="{{ .Permalink }}" />
 
-    <title>{{.Params.pageTitle | default .Title}} | {{.Site.Title}}</title>
-    <meta name="description" content="{{ .Description }}" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="{{ .Permalink }}" />
 
-    {{ template "_internal/schema.html" . }} {{ template
-    "_internal/opengraph.html" . }} {{ template "_internal/twitter_cards.html" .
-    }}
+  <title>{{.Params.pageTitle | default .Title}} | {{.Site.Title}}</title>
+  <meta name="description" content="{{ .Description }}" />
 
-    
-<script type="application/ld+json">
+  {{ template "_internal/schema.html" . }} {{ template
+  "_internal/opengraph.html" . }} {{ template "_internal/twitter_cards.html" .
+  }}
+
+
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org/", 
       "@type": "Product", 
@@ -589,50 +590,54 @@
     }
     </script>
 
-    <!-- Icon -->
-    <link rel="icon" href="/favicon.ico" />
+  <!-- Icon -->
+  <link rel="icon" href="/favicon.ico" />
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/sirnarasa.min.css" />
-  </head>
-  <body class="pb-5">
-    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-{{ partial "nav.html" . }}
-{{ partial "header2" . }}
+  <link rel="stylesheet" href="/css/sirnarasa.min.css" />
 
-<div class="container mt-5 mb-5">
-  <div class="row">
-    <div class="col-sm-12 col-lg-8 mb-5 card">
-      <article>
-        <div class="">
-          <div class="card-body p-md-5">
-            <div class="post-header mb-5">
-              <div class="mb-3">
-                <img
-                  src="/img/lazy.webp"
-                  data-src="{{ .Site.Params.author.image }}"
-                  class="rounded-circle lazy"
-                  width="32px"
-                  height="32px"
-                />
-                Team Kalender
+  <!-- Google Fonts - Inter for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="pb-3">
+
+
+  {{ partial "nav.html" . }}
+  {{ partial "header2" . }}
+
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-sm-12 col-lg-8 mb-5 card">
+        <article>
+          <div class="">
+            <div class="card-body p-md-5">
+              <div class="post-header mb-5">
+                <div class="mb-3">
+                  <img src="/img/lazy.webp" data-src="{{ .Site.Params.author.image }}" class="rounded-circle lazy"
+                    width="32px" height="32px" />
+                  Team Kalender
+                </div>
               </div>
+              <div class="post-content">
+                <div class="well">Daftar Isi: {{ .TableOfContents }}</div>
+                {{ .Content }}
+              </div>
+              <div class="post-footer"></div>
             </div>
-            <div class="post-content">
-              <div class="well">Daftar Isi: {{ .TableOfContents }}</div>
-              {{ .Content }}
-            </div>
-            <div class="post-footer"></div>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
+      <div class="col-sm-12 col-lg-4">{{ partial "aside.html" . }}</div>
     </div>
-    <div class="col-sm-12 col-lg-4">{{ partial "aside.html" . }}</div>
   </div>
-</div>
 
-{{ partial "footer" . }} 
-{{ partial "js-init" . }}
+  {{ partial "footer" . }}
+  {{ partial "js-init" . }}
 </body>
+
 </html>

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="canonical" href="{{ .Permalink }}" />
 
-    <title>{{.Params.pageTitle | default .Title}} | {{.Site.Title}}</title>
-    <meta name="description" content="{{ .Description }}" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="{{ .Permalink }}" />
 
-    {{ template "_internal/schema.html" . }} {{ template
-    "_internal/opengraph.html" . }} {{ template "_internal/twitter_cards.html" .
-    }}
+  <title>{{.Params.pageTitle | default .Title}} | {{.Site.Title}}</title>
+  <meta name="description" content="{{ .Description }}" />
 
-    <script type="application/ld+json">
+  {{ template "_internal/schema.html" . }} {{ template
+  "_internal/opengraph.html" . }} {{ template "_internal/twitter_cards.html" .
+  }}
+
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "CollegeOrUniversity",
@@ -32,18 +33,41 @@
       }
     </script>
 
-    <!-- Icon -->
-    <link rel="icon" href="/favicon.ico" />
+  <!-- Icon -->
+  <link rel="icon" href="/favicon.ico" />
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <style>
-      {{- partial "sirnarasa.min.css" . | safeCSS -}}
-    </style>
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v20.0" nonce="3S48k8CP"></script>
-  </head>
-  <body class="pb-5">
-    {{- block "main" . }} {{- end }} {{ partial "footer" . }} {{ partial
-    "js-init" . }}
-  </body>
+  <!-- Google Fonts - Inter for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+  {{/* Hugo Pipes for SCSS Processing - Updated for Hugo v0.128+ */}}
+  {{ $sass := resources.Get "scss/main.scss" }}
+  {{ $style := $sass | css.Sass (dict "targetPath" "css/sirnarasa.css" "enableSourceMap" (not hugo.IsProduction)) }}
+  {{ if hugo.IsProduction }}
+  {{ $style = $style | resources.Minify | resources.Fingerprint "sha256" }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" {{ if hugo.IsProduction
+    }}integrity="{{ $style.Data.Integrity }}" {{ end }}>
+
+  {{ if hugo.IsProduction }}
+  {{/* Preload critical resources for production */}}
+  <link rel="preload" href="{{ $style.RelPermalink }}" as="style">
+  <link rel="preload" href="/apple-touch-icon.png" as="image">
+  {{ end }}
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v20.0"
+    nonce="3S48k8CP"></script>
+</head>
+
+<body class="pb-5">
+  {{- block "main" . }} {{- end }} {{ partial "footer" . }}
+
+  {{ partial "js-init" . }}
+</body>
+
 </html>
